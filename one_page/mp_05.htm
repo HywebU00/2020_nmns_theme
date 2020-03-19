@@ -13,6 +13,7 @@
     <!-- slick css-->
     <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/animate.css">
     <!-- hyUI css -->
     <link rel="stylesheet" href="css/hyui.css">
     <link rel="stylesheet" href="css/style.css">
@@ -24,7 +25,7 @@
     <!-- 直接跳主內容區 -->
     <a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
     <!-- wrapper Start -->
-    <div class="wrapper version05">
+    <div class="wrapper version04">
         <!-- header Start -->
         <header class="header">
             <div class="container">
@@ -53,7 +54,7 @@
             <section class="demosection col-12 themepic_block">
                 <div class="container">
                     <div class="col">
-                        <div class="themepic"><img src="images/themepic05.jpg">
+                        <div class="themepic"><img src="images/themepic04.jpg">
                         </div>
                     </div>
                 </div>
@@ -69,13 +70,13 @@
                         <!-- 回個人報名首頁 end -->
                         <!-- 主題資料 start -->
                         <div class="theme_dat">
-                            <ul>
+                            <ul class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s">
                                 <li><span><img src="images/theme_data_icon01.png" alt="">活動對象：</span>小一~國中2年級</li>
                                 <li><span><img src="images/theme_data_icon02.png" alt="">活動地點：</span>本館立體劇場地下樓第二科學教室</li>
                                 <li><span><img src="images/theme_data_icon03.png" alt="">聯絡方式：</span>04-23226940轉230</li>
                                 <li><span><img src="images/theme_data_icon04.png" alt="">E-MAIL：</span> tseng@nmns.edu.tw</li>
                             </ul>
-                            <ul>
+                            <ul class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s">
                                 <li><span><img src="images/theme_data_icon05.png" alt="">活動日期：</span>109/1/18；109/1/19；109/1/21；109/1/22；109/2/8；109/2/9</li>
                                 <li><span><img src="images/theme_data_icon06.png" alt="">活動費用：</span>每梯次32人，每人新臺幣1,000元</li>
                             </ul>
@@ -88,7 +89,7 @@
                 <div class="container">
                     <div class="col">
                         <!-- 我要報名start -->
-                        <h2><span><img src="images/h2_icon01.png" alt=""></span>我要報名</h2>
+                        <h2 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".6s"><span><img src="images/h2_icon01.png" alt=""></span>我要報名</h2>
                         <!-- 表格start -->
                         <div class="table_list">
                             <table summary="">
@@ -302,7 +303,7 @@
                 <div class="container">
                     <div class="col">
                         <!-- 活動內容start -->
-                        <h2><span><img src="images/h2_icon02.png" alt=""></span>活動內容</h2>
+                        <h2 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s"><span><img src="images/h2_icon02.png" alt=""></span>活動內容</h2>
                         <div class="content">
                             <h3>列表樣式</h3>
                             <ol>
@@ -392,7 +393,7 @@
                 <div class="container">
                     <div class="col">
                         <!-- 活動介紹start -->
-                        <h2><span><img src="images/h2_icon03.png" alt=""></span>活動介紹</h2>
+                        <h2 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s"><span><img src="images/h2_icon03.png" alt=""></span>活動介紹</h2>
                         <div class="content">
                             <ol>
                                 <li>運用國立自然科學博物館既有教育資源，推展兼具趣味與探索性之教育活動，結合中小學校「生活科技」課程，增加中小學生接觸生活科技的機會，嘗試激發其對科學探索學習的興趣。</li>
@@ -458,7 +459,7 @@
                 <div class="container">
                     <div class="col">
                         <!-- 報名方式 start -->
-                        <h2><span><img src="images/h2_icon04.png" alt=""></span>報名方式</h2>
+                        <h2 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s"><span><img src="images/h2_icon04.png" alt=""></span>報名方式</h2>
                         <div class="content">
                             <h3>報名/繳費方式</h3>
                             <ol>
@@ -551,6 +552,10 @@
     <script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
     <script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
     <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
+    <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
     <!-- hyUI -->
     <script src="js/hyui.js"></script>
     <!-- 客製js -->
