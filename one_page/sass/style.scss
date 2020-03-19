@@ -1,0 +1,602 @@
+@import "_variable"; //變數
+@import "sass/_normalize"; //reset
+@import "sass/_mixin"; //客製MIXIN
+@import "sass/_typography"; //CP文字排版
+@import "sass/_font"; //文字設定
+@import "sass/_btn"; //按鈕設定
+.container {
+    padding: 0;
+    margin: 0 auto;
+    max-width: $container-max; //請看_variable.scss
+    // outline: 1px solid red;
+}
+a {
+    color: nth($primaryColor, $style);
+    &:hover {
+        color: $aHover;
+    }
+}
+// 版型02
+.version02 {
+    $style: index($sites, version02);
+    a {
+        color: nth($primaryColor, $style);
+        &:hover {
+            color: $aHover;
+        }
+    }
+    // mp.scss
+    .themepic_block {
+        &:before {
+            background-image: url('../images/themepicbg02.jpg');
+            background-color: #306d7e;
+        }
+    }
+    .theme_dat_block {
+        .back_signup {
+            a {
+                &:before {
+                    background-color: nth($primaryColor, $style);
+                }
+                &:hover {
+                    color: nth($lightColor, $style);
+                }
+                @include screen('mobile') {
+                    &:hover {
+                        color: nth($primaryColor, $style);
+                    }
+                }
+            }
+        }
+        .theme_dat {
+            background-color: nth($primaryColor, $style);
+        }
+    }
+    h2 {
+        span {
+            background-image: url('../images/h2_bg.png');
+        }
+    }
+    h3 {
+        color: nth($secondaryColor, $style);
+    }
+    // _table.scss
+    table {
+        th {
+            background-color: nth($secondaryColor, $style);
+        }
+        thead {
+            border-right: nth($secondaryColor, $style) 8px solid;
+            border-left: nth($secondaryColor, $style) 8px solid;
+        }
+    }
+    .table_list {
+        @include screen('mobile') {
+            table {
+                &.style2 {
+                    td {
+                        &:before {
+                            background-color: nth($primaryColor, $style);
+                        }
+                    }
+                }
+            }
+            td {
+                &:before {
+                    background-color: nth($secondaryColor, $style);
+                }
+            }
+        }
+        @media(max-width: 480px) {
+            table {
+                &.style2 {
+                    td {
+                        &:before {
+                            color: nth($primaryColor, $style);
+                        }
+                    }
+                }
+            }
+            td {
+                &:before {
+                    color: nth($secondaryColor, $style);
+                }
+            }
+        }
+    }
+    .table_list_fixed_thleft {
+        table {
+            th {
+                background-color: nth($primaryColor, $style);
+            }
+        }
+    }
+    // _menu.scss
+    .menu {
+        >ul {
+            >li {
+                &:hover {
+                    >a {
+                        color: nth($primaryColor, $style);
+                    }
+                }
+            }
+        }
+    }
+    .sidebar {
+        .m_area {
+            &:before {
+                background: nth($primaryColor, $style);
+            }
+            background: nth($primaryColor, $style);
+        }
+    }
+    // _modal.scss
+    .modal, .modal2, .modal3 {
+        h2 {
+            border-bottom: 2px solid nth($secondaryColor, $style) !important;
+            color: nth($secondaryColor, $style) !important;
+        }
+        h3 {
+            &:before {
+                border: 8px solid nth($primaryColor, $style);
+                border-color: transparent transparent transparent nth($primaryColor, $style);
+            }
+        }
+    }
+    .activity_data {
+        ul {
+            li {
+                &:before {
+                    border: 8px solid nth($primaryColor, $style);
+                    border-color: transparent transparent transparent nth($primaryColor, $style);
+                }
+            }
+        }
+    }
+    // _element.scss
+    .scrollToTop {
+        background-color: nth($primaryColor, $style);
+        &:hover, &:focus {
+            background-color: nth($primaryColor, $style);
+        }
+    }
+}
+// 版型03
+.version03 {
+    $style: index($sites, version03);
+    a {
+        color: nth($primaryColor, $style);
+        &:hover {
+            color: $aHover;
+        }
+    }
+    // mp.scss
+    .themepic_block {
+        &:before {
+            background-image: url('../images/themepicbg03.jpg');
+            background-color: #393938;
+        }
+    }
+    .theme_dat_block {
+        .back_signup {
+            a {
+                &:before {
+                    background-color: nth($primaryColor, $style);
+                }
+                &:hover {
+                    color: nth($lightColor, $style);
+                }
+                @include screen('mobile') {
+                    &:hover {
+                        color: nth($primaryColor, $style);
+                    }
+                }
+            }
+        }
+        .theme_dat {
+            background-color: nth($primaryColor, $style);
+        }
+    }
+    h2 {
+        span {
+            background-image: url('../images/h2_bg2.png');
+        }
+    }
+    h3 {
+        color: nth($secondaryColor, $style);
+    }
+    // _table.scss
+    table {
+        th {
+            background-color: nth($secondaryColor, $style);
+        }
+        thead {
+            border-right: nth($secondaryColor, $style) 8px solid;
+            border-left: nth($secondaryColor, $style) 8px solid;
+        }
+    }
+    .table_list {
+        @include screen('mobile') {
+            table {
+                &.style2 {
+                    td {
+                        &:before {
+                            background-color: nth($primaryColor, $style);
+                        }
+                    }
+                }
+            }
+            td {
+                &:before {
+                    background-color: nth($secondaryColor, $style);
+                }
+            }
+        }
+        @media(max-width: 480px) {
+            table {
+                &.style2 {
+                    td {
+                        &:before {
+                            color: nth($primaryColor, $style);
+                        }
+                    }
+                }
+            }
+            td {
+                &:before {
+                    color: nth($secondaryColor, $style);
+                }
+            }
+        }
+    }
+    .table_list_fixed_thleft {
+        table {
+            th {
+                background-color: nth($primaryColor, $style);
+            }
+        }
+    }
+    // _menu.scss
+    .menu {
+        >ul {
+            >li {
+                &:hover {
+                    >a {
+                        color: nth($primaryColor, $style);
+                    }
+                }
+            }
+        }
+    }
+    .sidebar {
+        .m_area {
+            &:before {
+                background: nth($primaryColor, $style);
+            }
+            background: nth($primaryColor, $style);
+        }
+    }
+    // _modal.scss
+    .modal, .modal2, .modal3 {
+        h2 {
+            border-bottom: 2px solid nth($secondaryColor, $style) !important;
+            color: nth($secondaryColor, $style) !important;
+        }
+        h3 {
+            &:before {
+                border: 8px solid nth($primaryColor, $style);
+                border-color: transparent transparent transparent nth($primaryColor, $style);
+            }
+        }
+    }
+    .activity_data {
+        ul {
+            li {
+                &:before {
+                    border: 8px solid nth($primaryColor, $style);
+                    border-color: transparent transparent transparent nth($primaryColor, $style);
+                }
+            }
+        }
+    }
+    // _element.scss
+    .scrollToTop {
+        background-color: nth($primaryColor, $style);
+        &:hover, &:focus {
+            background-color: nth($primaryColor, $style);
+        }
+    }
+}
+// 版型04
+.version04 {
+    $style: index($sites, version04);
+    a {
+        color: nth($primaryColor, $style);
+        &:hover {
+            color: $aHover;
+        }
+    }
+    // mp.scss
+    .themepic_block {
+        &:before {
+            background-image: url('../images/themepicbg04.jpg');
+            background-color: #393938;
+        }
+    }
+    .theme_dat_block {
+        .back_signup {
+            a {
+                &:before {
+                    background-color: nth($primaryColor, $style);
+                }
+                &:hover {
+                    color: nth($lightColor, $style);
+                }
+                @include screen('mobile') {
+                    &:hover {
+                        color: nth($primaryColor, $style);
+                    }
+                }
+            }
+        }
+        .theme_dat {
+            background-color: nth($primaryColor, $style);
+        }
+    }
+    h2 {
+        span {
+            background-image: url('../images/h2_bg3.png');
+        }
+    }
+    h3 {
+        color: nth($secondaryColor, $style);
+    }
+    // _table.scss
+    table {
+        th {
+            background-color: nth($secondaryColor, $style);
+        }
+        thead {
+            border-right: nth($secondaryColor, $style) 8px solid;
+            border-left: nth($secondaryColor, $style) 8px solid;
+        }
+    }
+    .table_list {
+        @include screen('mobile') {
+            table {
+                &.style2 {
+                    td {
+                        &:before {
+                            background-color: nth($primaryColor, $style);
+                        }
+                    }
+                }
+            }
+            td {
+                &:before {
+                    background-color: nth($secondaryColor, $style);
+                }
+            }
+        }
+        @media(max-width: 480px) {
+            table {
+                &.style2 {
+                    td {
+                        &:before {
+                            color: nth($primaryColor, $style);
+                        }
+                    }
+                }
+            }
+            td {
+                &:before {
+                    color: nth($secondaryColor, $style);
+                }
+            }
+        }
+    }
+    .table_list_fixed_thleft {
+        table {
+            th {
+                background-color: nth($primaryColor, $style);
+            }
+        }
+    }
+    // _menu.scss
+    .menu {
+        >ul {
+            >li {
+                &:hover {
+                    >a {
+                        color: nth($primaryColor, $style);
+                    }
+                }
+            }
+        }
+    }
+    .sidebar {
+        .m_area {
+            &:before {
+                background: nth($primaryColor, $style);
+            }
+            background: nth($primaryColor, $style);
+        }
+    }
+    // _modal.scss
+    .modal, .modal2, .modal3 {
+        h2 {
+            border-bottom: 2px solid nth($secondaryColor, $style) !important;
+            color: nth($secondaryColor, $style) !important;
+        }
+        h3 {
+            &:before {
+                border: 8px solid nth($primaryColor, $style);
+                border-color: transparent transparent transparent nth($primaryColor, $style);
+            }
+        }
+    }
+    .activity_data {
+        ul {
+            li {
+                &:before {
+                    border: 8px solid nth($primaryColor, $style);
+                    border-color: transparent transparent transparent nth($primaryColor, $style);
+                }
+            }
+        }
+    }
+    // _element.scss
+    .scrollToTop {
+        background-color: nth($primaryColor, $style);
+        &:hover, &:focus {
+            background-color: nth($primaryColor, $style);
+        }
+    }
+}
+// 版型04
+.version05 {
+    $style: index($sites, version05);
+    a {
+        color: nth($primaryColor, $style);
+        &:hover {
+            color: $aHover;
+        }
+    }
+    // mp.scss
+    .themepic_block {
+        &:before {
+            background-image: url('../images/themepicbg05.jpg');
+            background-color: #393938;
+        }
+    }
+    .theme_dat_block {
+        .back_signup {
+            a {
+                &:before {
+                    background-color: nth($primaryColor, $style);
+                }
+                &:hover {
+                    color: nth($lightColor, $style);
+                }
+                @include screen('mobile') {
+                    &:hover {
+                        color: nth($primaryColor, $style);
+                    }
+                }
+            }
+        }
+        .theme_dat {
+            background-color: nth($primaryColor, $style);
+        }
+    }
+    h2 {
+        span {
+            background-image: url('../images/h2_bg4.png');
+        }
+    }
+    h3 {
+        color: nth($secondaryColor, $style);
+    }
+    // _table.scss
+    table {
+        th {
+            background-color: nth($secondaryColor, $style);
+        }
+        thead {
+            border-right: nth($secondaryColor, $style) 8px solid;
+            border-left: nth($secondaryColor, $style) 8px solid;
+        }
+    }
+    .table_list {
+        @include screen('mobile') {
+            table {
+                &.style2 {
+                    td {
+                        &:before {
+                            background-color: nth($primaryColor, $style);
+                        }
+                    }
+                }
+            }
+            td {
+                &:before {
+                    background-color: nth($secondaryColor, $style);
+                }
+            }
+        }
+        @media(max-width: 480px) {
+            table {
+                &.style2 {
+                    td {
+                        &:before {
+                            color: nth($primaryColor, $style);
+                        }
+                    }
+                }
+            }
+            td {
+                &:before {
+                    color: nth($secondaryColor, $style);
+                }
+            }
+        }
+    }
+    .table_list_fixed_thleft {
+        table {
+            th {
+                background-color: nth($primaryColor, $style);
+            }
+        }
+    }
+    // _menu.scss
+    .menu {
+        >ul {
+            >li {
+                &:hover {
+                    >a {
+                        color: nth($primaryColor, $style);
+                    }
+                }
+            }
+        }
+    }
+    .sidebar {
+        .m_area {
+            &:before {
+                background: nth($primaryColor, $style);
+            }
+            background: nth($primaryColor, $style);
+        }
+    }
+    // _modal.scss
+    .modal, .modal2, .modal3 {
+        h2 {
+            border-bottom: 2px solid nth($secondaryColor, $style) !important;
+            color: nth($secondaryColor, $style) !important;
+        }
+        h3 {
+            &:before {
+                border: 8px solid nth($primaryColor, $style);
+                border-color: transparent transparent transparent nth($primaryColor, $style);
+            }
+        }
+    }
+    .activity_data {
+        ul {
+            li {
+                &:before {
+                    border: 8px solid nth($primaryColor, $style);
+                    border-color: transparent transparent transparent nth($primaryColor, $style);
+                }
+            }
+        }
+    }
+    // _element.scss
+    .scrollToTop {
+        background-color: nth($primaryColor, $style);
+        &:hover, &:focus {
+            background-color: nth($primaryColor, $style);
+        }
+    }
+}

@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>國立自然科學博物館 主題網</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- slick css-->
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/hyui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- favicon -->
+    <link href="images/favicon.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+    <!-- 直接跳主內容區 -->
+    <a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
+    <!-- wrapper Start -->
+    <div class="wrapper version03">
+        <!-- header Start -->
+        <header class="header">
+            <div class="container">
+                <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+                <h1>
+                    <a href="../index.htm">「『蕨』色美景」金玉滿堂熱膠封存法</a>
+                </h1>
+                <!-- menu Start -->
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">活動內容</a></li>
+                        <li><a href="#">活動介紹</a></li>
+                        <li><a href="#">報名方式</a></li>
+                        <li><a href="#">我要報名</a></li>
+                    </ul>
+                </nav>
+                <!-- menu End -->
+            </div>
+        </header>
+        <!-- header End -->
+        <!-- main Start -->
+        <div id="center" class="main">
+            <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
+            <!-- 任何一個section下一層都要包下一層都要包div container作對齊 -->
+            <!-- 主題圖start -->
+            <section class="demosection col-12 themepic_block">
+                <div class="container">
+                    <div class="col">
+                        <div class="themepic"><img src="images/themepic03.jpg">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 主題圖end -->
+            <section class="demosection col-12 theme_dat_block">
+                <div class="container">
+                    <div class="col">
+                        <!-- 回個人報名首頁 start -->
+                        <div class="back_signup">
+                            <a href="#">回個人報名首頁</a>
+                        </div>
+                        <!-- 回個人報名首頁 end -->
+                        <!-- 主題資料 start -->
+                        <div class="theme_dat">
+                            <ul>
+                                <li><span><img src="images/theme_data_icon01.png" alt="">活動對象：</span>小一~國中2年級</li>
+                                <li><span><img src="images/theme_data_icon02.png" alt="">活動地點：</span>本館立體劇場地下樓第二科學教室</li>
+                                <li><span><img src="images/theme_data_icon03.png" alt="">聯絡方式：</span>04-23226940轉230</li>
+                                <li><span><img src="images/theme_data_icon04.png" alt="">E-MAIL：</span> tseng@nmns.edu.tw</li>
+                            </ul>
+                            <ul>
+                                <li><span><img src="images/theme_data_icon05.png" alt="">活動日期：</span>109/1/18；109/1/19；109/1/21；109/1/22；109/2/8；109/2/9</li>
+                                <li><span><img src="images/theme_data_icon06.png" alt="">活動費用：</span>每梯次32人，每人新臺幣1,000元</li>
+                            </ul>
+                        </div>
+                        <!-- 主題資料 end  -->
+                    </div>
+                </div>
+            </section>
+            <section class="demosection col-12 signup_block s_4">
+                <div class="container">
+                    <div class="col">
+                        <!-- 我要報名start -->
+                        <h2><span><img src="images/h2_icon01.png" alt=""></span>我要報名</h2>
+                        <!-- 表格start -->
+                        <div class="table_list">
+                            <table summary="">
+                                <thead>
+                                    <tr>
+                                        <th>活動名稱</th>
+                                        <th>活動日期</th>
+                                        <th>報名狀態</th>
+                                        <th>登錄人數</th>
+                                        <th>登錄名單</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#">創意機關王主題研習</a></td>
+                                        <td class="aCenter">智能系列－仿生機械<br> 2020/1/18(六) 9:00~17:00 </td>
+                                        <td class="aCenter"><button type="button" class="btn">已截止</button></td>
+                                        <td class="aCenter">32</td>
+                                        <td class="aCenter"><button type="button" class="btn btn-gray">登錄名單</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>創意機關王主題研習</td>
+                                        <td class="aCenter">智能系列－仿生機械<br> 2020/1/18(六) 9:00~17:00 </td>
+                                        <td class="aCenter"><button type="button" class="btn btn-orange " id="openModal">我要報名</button><br><button type="button" class="btn btn-orange " id="openModal2">已登入會員</button></td>
+                                        <td class="aCenter">32</td>
+                                        <td class="aCenter"><button type="button" class="btn btn-gray" id="openModal3">登錄名單</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>創意機關王主題研習</td>
+                                        <td class="aCenter">智能系列－仿生機械<br> 2020/1/18(六) 9:00~17:00 </td>
+                                        <td class="aCenter">2019/11/20 上午 10:00:00 <br> 開放報名</td>
+                                        <td class="aCenter">&nbsp;</td>
+                                        <td class="aCenter">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>創意機關王主題研習</td>
+                                        <td class="aCenter">智能系列－仿生機械<br> 2020/1/18(六) 9:00~17:00 </td>
+                                        <td class="aCenter">2019/11/20 上午 10:00:00 <br> 開放報名</td>
+                                        <td class="aCenter">&nbsp;</td>
+                                        <td class="aCenter">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>創意機關王主題研習</td>
+                                        <td class="aCenter">智能系列－仿生機械<br> 2020/1/18(六) 9:00~17:00 </td>
+                                        <td class="aCenter">2019/11/20 上午 10:00:00 <br> 開放報名</td>
+                                        <td class="aCenter">&nbsp;</td>
+                                        <td class="aCenter">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>創意機關王主題研習</td>
+                                        <td class="aCenter">智能系列－仿生機械<br> 2020/1/18(六) 9:00~17:00 </td>
+                                        <td class="aCenter">2019/11/20 上午 10:00:00 <br> 開放報名</td>
+                                        <td class="aCenter">&nbsp;</td>
+                                        <td class="aCenter">&nbsp;</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- 表格end  -->
+                        <!-- 我要報名end -->
+                    </div>
+                </div>
+            </section>
+            <!--燈箱1 start-->
+            <div id="modal1" class="modal">
+                <h2>會員登入</h2>
+                <div class="content">
+                    <h3>貼心小提醒：</h3>
+                    <p>科教活動個人報名系統已正式納入單一登入服務，108/9/30前已在本系統註冊過的學員，仍需先加入「科博館會員」，之後用科博館會員帳密登入即可快速報名/查詢個人報名系統的科教活動</p>
+                    <p class="word_red">108/9/30前已成功報名/繳費的學員仍保有原先狀態，不受任何影響。</p>
+                    <button class="btn">會員單一登入</button>
+                </div>
+            </div>
+            <!--燈箱1 end-->
+            <!--燈箱2 start-->
+            <div id="modal2" class="modal2">
+                <h2>我要報名</h2>
+                <div class="content">
+                    <p>這是您剛才所選活動的詳細內容，請詳閱清楚。如確定這就是您要報名的活動，請按『登錄報名』進行報名，若想報名其他活動則請按『取消』</p>
+                    <h3>請確認您的報名的活動資料</h3>
+                    <div class="lightboxTb">
+                        <table>
+                            <tr>
+                                <th>活動名稱：</th>
+                                <td>創意機關王主題研習</td>
+                            </tr>
+                            <tr>
+                                <th>活動日期：</th>
+                                <td>智能系列－仿生機械<br> 2020/1/18(六) 9:00~17:00 </td>
+                            </tr>
+                            <tr>
+                                <th>費用：</th>
+                                <td>免費</td>
+                            </tr>
+                            <tr>
+                                <th>活動對象：</th>
+                                <td>社會大眾</td>
+                            </tr>
+                            <tr>
+                                <th>活動內容：</th>
+                                <td>運用積木特性及機械原理，製作成仿真動物的運動機構，配合紅外線遙控機體進行挑戰任務。</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <h3> 請確認您的基本資料</h3>
+                    <div class="lightboxTb">
+                        <table>
+                            <tr>
+                                <th>身分證字號：</th>
+                                <td>A123456789</td>
+                            </tr>
+                            <tr>
+                                <th>姓名：</th>
+                                <td>羅郁晴</td>
+                            </tr>
+                            <tr>
+                                <th>出生年月日：</th>
+                                <td>1990/03/19</td>
+                            </tr>
+                            <tr>
+                                <th>手機：</th>
+                                <td>社會大眾</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="btn_grp">
+                        <input name="Search" type="submit" value="登入報名">
+                        <input name="" type="reset" value="取消" class="cancel">
+                    </div>
+                </div>
+            </div>
+            <!--燈箱2 end-->
+            <!--燈箱3 start-->
+            <div id="modal3" class="modal3">
+                <h2>登錄名單</h2>
+                <div class="activity_data">
+                    <ul>
+                        <li><span>活動名稱：</span>創意機關王主題研習</li>
+                        <li><span>活動日期：</span>2020/1/18(日)</li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="table_list">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>流水號</th>
+                                    <th>姓名</th>
+                                    <th>連絡電話</th>
+                                    <th>登錄時間</th>
+                                    <th>錄取狀況</th>
+                                    <th>繳費狀況</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="aCenter">1.</td>
+                                    <td class="aCenter">羅*晴</td>
+                                    <td class="aCenter">091234****</td>
+                                    <td class="aCenter">2019/10/04 10:03</td>
+                                    <td class="aCenter">正取</td>
+                                    <td class="aCenter">已繳費</td>
+                                </tr>
+                                <tr>
+                                    <td class="aCenter">2.</td>
+                                    <td class="aCenter">陳*明</td>
+                                    <td class="aCenter">098765****</td>
+                                    <td class="aCenter">2019/10/04 10:03</td>
+                                    <td class="aCenter">正取</td>
+                                    <td class="aCenter">已繳費</td>
+                                </tr>
+                                <tr>
+                                    <td class="aCenter">3.</td>
+                                    <td class="aCenter">羅*晴</td>
+                                    <td class="aCenter">091234****</td>
+                                    <td class="aCenter">2019/10/04 10:03</td>
+                                    <td class="aCenter">正取</td>
+                                    <td class="aCenter">已繳費</td>
+                                </tr>
+                                <tr>
+                                    <td class="aCenter">4.</td>
+                                    <td class="aCenter">陳*明</td>
+                                    <td class="aCenter">098765****</td>
+                                    <td class="aCenter">2019/10/04 10:03</td>
+                                    <td class="aCenter">正取</td>
+                                    <td class="aCenter">已繳費</td>
+                                </tr>
+                                <tr>
+                                    <td class="aCenter">5.</td>
+                                    <td class="aCenter">羅*晴</td>
+                                    <td class="aCenter">091234****</td>
+                                    <td class="aCenter">2019/10/04 10:03</td>
+                                    <td class="aCenter">正取</td>
+                                    <td class="aCenter">已繳費</td>
+                                </tr>
+                                <tr>
+                                    <td class="aCenter">6.</td>
+                                    <td class="aCenter">陳*明</td>
+                                    <td class="aCenter">098765****</td>
+                                    <td class="aCenter">2019/10/04 10:03</td>
+                                    <td class="aCenter">正取</td>
+                                    <td class="aCenter">已繳費</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--燈箱3 end-->
+            <section class="demosection col-12 activities_block s_1">
+                <div class="container">
+                    <div class="col">
+                        <!-- 活動內容start -->
+                        <h2><span><img src="images/h2_icon02.png" alt=""></span>活動內容</h2>
+                        <div class="content">
+                            <h3>列表樣式</h3>
+                            <ol>
+                                <li>智能系列-仿生機械 <ul>
+                                        <li>活動內容：爆走企鵝、橫行螃蟹及猛瑪象</li>
+                                        <li>活動說明：運用積木特性及機械原理，製作成仿真動物的運動機構，配合紅外線遙控機體進行挑戰任務。</li>
+                                        <li>活動日期：109年1月18日一梯次。</li>
+                                    </ul>
+                                </li>
+                                <li>智能系列-動物大奇航 <ul>
+                                        <li>活動內容：冒險蟲蟲、四足巨獸及橫行霸道</li>
+                                        <li>活動說明：運用積木模擬製作小動物運動機構，製作簡易造型，配合單向開關控制積木仿生動作，挑戰關卡任務。</li>
+                                        <li>活動日期：109年1月21日及2月8日活動，每天一梯次，共2梯次。</li>
+                                    </ul>
+                                </li>
+                                <li>液壓系列 <ul>
+                                        <li>活動內容：冒險蟲蟲、四足巨獸及橫行霸道</li>
+                                        <li>活動說明：運用積木模擬製作小動物運動機構，製作簡易造型，配合單向開關控制積木仿生動作，挑戰關卡任務。</li>
+                                        <li>活動日期：109年1月21日及2月8日活動，每天一梯次，共2梯次。</li>
+                                    </ul>
+                                </li>
+                                <li>智能系列-古墓奇兵 <ul>
+                                        <li>活動內容：智慧車、遙控機械手臂</li>
+                                        <li>活動說明：運用積木特性及機械原理，製作仿真的車輛及機械手臂，配合紅外線遙控機體進行挑戰任務。</li>
+                                        <li>活動日期：109年1月19日一梯次。</li>
+                                    </ul>
+                                </li>
+                                <li>智能系列-百戰天龍 <ul>
+                                        <li>活動內容：冒險蟲蟲、四足巨獸及橫行霸道</li>
+                                        <li>活動說明：運用積木模擬製作小動物運動機構，製作簡易造型，配合單向開關控制積木仿生動作，挑戰關卡任務。</li>
+                                        <li>活動日期：109年1月21日及2月8日活動，每天一梯次，共2梯次。</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                            <!-- 表格 start-->
+                            <div class="scrollX">
+                                <div class="table_list_thleft">
+                                    <table>
+                                        <tr>
+                                            <th>時間</th>
+                                            <td>09:20~09:30</td>
+                                            <td>09:30~10:00</td>
+                                            <td>10:00~10:30</td>
+                                            <td>10:30~11:30</td>
+                                            <td>11:30~11:50</td>
+                                            <td>11:50~</td>
+                                        </tr>
+                                        <tr>
+                                            <th>行程</th>
+                                            <td>報到</td>
+                                            <td>室內課</td>
+                                            <td>分站活動</td>
+                                            <td>室內課</td>
+                                            <td>室內課</td>
+                                            <td>活動結束，自由參觀</td>
+                                        </tr>
+                                        <tr>
+                                            <th>內容</th>
+                                            <td>簽到及領取識別證</td>
+                                            <td>生態影片觀賞及介紹</td>
+                                            <td>顯不易見、蛋不簡單</td>
+                                            <td>動動手-飛起來</td>
+                                            <td>程果總結、有獎徵答</td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <th>備註</th>
+                                            <td>依學生完成進度，彈性調整時間。</td>
+                                            <td>依學生完成進度，彈性調整時間。</td>
+                                            <td>依學生完成進度，彈性調整時間。</td>
+                                            <td>依學生完成進度，彈性調整時間。</td>
+                                            <td>依學生完成進度，彈性調整時間。</td>
+                                            <td>依學生完成進度，彈性調整時間。</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <!--  <button type="button" class="navCtrl toLeft"></button>
+                                <button type="button" class="navCtrl toRight"></button> -->
+                            </div>
+                            <!-- 表格 end-->
+                        </div>
+                        <!-- 活動內容end -->
+                    </div>
+                </div>
+            </section>
+            <section class="demosection col-12 activity_description_block s_2">
+                <div class="container">
+                    <div class="col">
+                        <!-- 活動介紹start -->
+                        <h2><span><img src="images/h2_icon03.png" alt=""></span>活動介紹</h2>
+                        <div class="content">
+                            <ol>
+                                <li>運用國立自然科學博物館既有教育資源，推展兼具趣味與探索性之教育活動，結合中小學校「生活科技」課程，增加中小學生接觸生活科技的機會，嘗試激發其對科學探索學習的興趣。</li>
+                                <li>本活動採主題式教學方法，結合本館科學輔導教師人力，以動手實做的策略，培養學生活用物理機械運作的觀念與原理，並訓練其科學動手探索之規劃、實踐、解決問題與創意思考的能力，且為學生將來有意參加「機關王創意競賽」預做準備。對象涵蓋國小1年級至國中2年級學生（約民國93年9月2日至102年9月1日間出生者），不分男女，每人各自報名及操作，無法攜回活動作品。</li>
+                            </ol>
+                            <!-- 表格 start-->
+                            <div class="table_list">
+                                <table summary="">
+                                    <thead>
+                                        <tr>
+                                            <th>活動主題</th>
+                                            <th>學齡限制</th>
+                                            <th>人數及費用</th>
+                                            <th>自備器材</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="aCenter">智能系列－仿生機械</td>
+                                            <td class="aCenter">國小1年級至4年級</td>
+                                            <td class="aCenter">每梯次32人，<br>每人新臺幣1,000元</td>
+                                            <td>個人隨身用品，如環保筷、水瓶或藥品等。</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="aCenter">智能系列－動物大奇航</td>
+                                            <td class="aCenter">國小1年級至4年級</td>
+                                            <td class="aCenter">每梯次32人，<br>每人新臺幣1,000元</td>
+                                            <td>個人隨身用品，如環保筷、水瓶或藥品等。</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="aCenter">液壓系列</td>
+                                            <td class="aCenter">國小3年級至6年級</td>
+                                            <td class="aCenter">每梯次32人，<br>每人新臺幣1,000元</td>
+                                            <td>個人隨身用品，如環保筷、水瓶或藥品等。</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="aCenter">智能系列－古墓奇兵</td>
+                                            <td class="aCenter">國小4年級至國中2年級</td>
+                                            <td class="aCenter">每梯次32人，<br>每人新臺幣1,000元</td>
+                                            <td>個人隨身用品，如環保筷、水瓶或藥品等。</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="aCenter">智能系列－百戰天龍</td>
+                                            <td class="aCenter">國小4年級至國中2年級</td>
+                                            <td class="aCenter">每梯次32人，<br>每人新臺幣1,000元</td>
+                                            <td>個人隨身用品，如環保筷、水瓶或藥品等。</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- 表格 end-->
+                            <ul>
+                                <li>活動地點：本館立體劇場地下樓第二科學教室。</li>
+                                <li>聯絡方式：04-23226940轉230；傳真：04-23235347</li>
+                                <li>本活動為本館歷年來推展趣味科技探索活動的進階與延伸，已於臉書（Facebook）特別開設粉絲專頁（有意者，請於臉書中搜尋【創意科學動手做】，按讚 後即可加入），將不定期分享活動訊息、照片與影片等資料。其活動影片分享如下：<br>【創意科學動手做】粉絲專頁活動影片<br><a href="https://www.youtube.com/channel/UC3ZHPrIMtp1oHdQ5F_-U4ag/videos">https://www.youtube.com/channel/UC3ZHPrIMtp1oHdQ5F_-U4ag/videos</a><br> 本活動教師群輔導學生們多年來榮獲創意機關王臺中市賽、全國賽及世界賽多次優勝獎項。</li>
+                            </ul>
+                        </div>
+                        <!-- 活動介紹end -->
+                    </div>
+                </div>
+            </section>
+            <section class="demosection col-12 signup_manner_block s_3">
+                <div class="container">
+                    <div class="col">
+                        <!-- 報名方式 start -->
+                        <h2><span><img src="images/h2_icon04.png" alt=""></span>報名方式</h2>
+                        <div class="content">
+                            <h3>報名/繳費方式</h3>
+                            <ol>
+                                <li>採網路預約方式報名：請由教育活動個人報名系統進入，註冊後即可報名。曾報名參加過本館其他活動者，請直 接登入系統報名。</li>
+                                <li>108/10/19梯次自108/9/20早上10點開放報名，108/10/1截止報名，依報名先後順序錄取，正取50人（本活動採團報團繳方式，正取名額至多可至53人）。錄取名單請自行上網查詢，本館不另行通知。</li>
+                                <li>本活動可個人單獨報名，或至多四人一團報名。<br> 親子團體時由一人代表報名，報名代表人報名時須填其它成員資訊，該團報名為正取後，團體合在一起為一張繳費單。之後報名代表人可動態取消團體中任意人數或全團取消。團體繳費完成後，報名代表人可動態申辦任意人數退費或全團退費。。(注意：請於活動結束後，登入報名系統填寫申辦退費單)</li>
+                                <li>本活動是報名截止後才開始繳費，若該梯報名人數未達30人，將取消辦理，屆時將發訊息通知。若如期辦理，請正取者儘快登入系統選取繳費方式完成繳費。</li>
+                                <li>經預約正取者如未能如期參加活動，請於活動報名截止日前上網取消，錄取者未事先聯繫或逾期未繳費者視同放棄，並註記未報到1次。未報到者將累計未到次數，累計滿3次本館將取消其半年上網預約活動權利。</li>
+                            </ol>
+                            <h3>繳費方式</h3>
+                            <p>本活動費用提供多元繳費管道（我要參看多元繳費方式的更詳細說明），學員報名成功為正取後，可任選一種繳費方式辦理：(1) 信用卡線上繳費、(2)便利超商代繳、(3)ATM轉帳、(4)到館繳費(本館綜合服務中心)。</p>
+                            <ol>
+                                <li>同時報名多項活動的學員可勾選多筆正取活動為一筆繳費單（繳費截止日須為同一天），以節省手續費。</li>
+                                <li>信用卡線上繳費是使用e政府服務平台所界接合作的線上服務，信用卡繳費手續費是依各發卡銀行而定，與e政府服務平台合作的銀行及手續費可至『發卡機構手續費一覽表』查詢。</li>
+                                <li>選用便利超商代繳或ATM轉帳繳費須自印繳費單據，手續費為外加，不包含在活動費用中。</li>
+                                <li>繳費收據應保留至確認繳款無誤，正式繳費收據將在費用核銷後即可登入報名系統自行下載。</li>
+                                <li>選用線上刷卡、超商代繳、ATM轉帳等繳費方式的繳費期限為108/10/2起至108/10/9止，逾期信用卡、超商、ATM均不受理。若 繳費單據期限已過，仍可在108/10/16下午4:00前之開館期間本館綜合服務中心繳費。</li>
+                                <li>到館繳費（請提供學員身分證字號，可由親友代繳）：正取學員可在108/10/16下午4時前之本館開館期間至綜合服務中心繳費。</li>
+                            </ol>
+                            <h3>退費方式</h3>
+                            <p>報名繳費後因故不克參加活動需辦理退費者，可線上申辦，申辦方法請參看「退費線上申辦說明」。</p>
+                            <ul class="noicon">
+                                <li>（一）活動日之15天（含）前申請退費，按所繳報名費退還70%。</li>
+                                <li>（二）活動日之8~14天（含）前申請退費，按所繳報名費退還50%。</li>
+                                <li>（三）活動日之2~7天（含）前申請退費，按所繳報名費退還30%。</li>
+                                <li>（四）活動日前1天及活動當天申請退費，恕不受理。</li>
+                            </ul>
+                            <div class="refund"><img src="images/refund_pic01.png" alt=""></div>
+                        </div>
+                        <!-- 報名方式 end -->
+                    </div>
+                </div>
+            </section>
+            <section class="demosection col-12 attachment_download_block">
+                <div class="container">
+                    <div class="col">
+                        <!-- 附件下載tart -->
+                        <h2>附件下載</h2>
+                        <div class="content">
+                            <div class="attachment_download">
+                                <ul>
+                                    <li><a href="javascript:;"><img src="images/icon_doc.png" alt=""></a></li>
+                                    <li><a href="javascript:;"><img src="images/icon_xls.png" alt=""></a></li>
+                                    <li><a href="javascript:;"><img src="images/icon_zip.png" alt=""></a></li>
+                                    <li><a href="javascript:;"><img src="images/icon_pdf.png" alt=""></a></li>
+                                    <li><a href="javascript:;"><img src="images/icon_jpg.png" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 附件下載end -->
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- footer Start-->
+        <footer>
+            <div class="container">
+                <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
+                <div class="footer_info">
+                    <!-- <ul class="footer_link">
+                        <li><a href="javascript:;">隱私權政策</a></li>
+                        <li><a href="javascript:;">網站安全政策</a></li>
+                        <li><a href="javascript:;">政府網站資料開放宣告</a></li>
+                    </ul> -->
+                    <p class="Copyright"> 國立自然科學博物館©版權所有</p>
+                    <p> 地址：40453台中市北區館前路一號　<br /> 電話：+886-4-23226940</p>
+                </div>
+                <div class="footer_icon">
+                    <!-- <span class="update">更新日期:<em>2018/01/01</em></span> -->
+                    <span class="counter">累計瀏覽人次:<em>46476653</em></span>
+                    <!-- <a target="_blank" href="javascript:;" title="另開視窗">
+                        <img src="images/basic/accessibility.jpg" alt="">
+                    </a>
+                    <a target="_blank" href="javascript:;" title="另開視窗">
+                        <img src="images/basic/egov.png" alt="">
+                    </a> -->
+                </div>
+            </div>
+        </footer>
+        <!-- footer End -->
+         <a href="javascript:;" class="scrollToTop">回頁首</a>
+    </div>
+   
+    <!-- JQ -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- 外掛 plugin js -->
+    <script src="vendor/jquery.easing.min.js"></script><!-- ease -->
+    <script src="vendor/slick/slick.min.js "></script><!-- slick -->
+    <script src="vendor/slick/slick-lightbox.js "></script><!-- slick lightbox -->
+    <script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
+    <script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
+    <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
+    <!-- hyUI -->
+    <script src="js/hyui.js"></script>
+    <!-- 客製js -->
+    <script src="js/customize.js"></script>
+</body>
+
+</html>

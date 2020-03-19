@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>科博館主題網</title>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- hyUI -->
+    <link rel="stylesheet" href="one_page/css/hyui.css">
+    <style>
+    .demo_wrap {
+        max-width: 1000px;
+        margin: 0em auto 1em;
+        padding: 15px 15px 3em;
+        clear: both;
+        background: #FFF
+    }
+    .demo_wrap h1 {
+        display: block;
+        margin: 0px auto;
+        /* max-width: 300px; */
+        float: left;
+        margin-right: 1em
+    }
+    .demo_wrap h1 img {
+        vertical-align: top;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        display: inline-block;
+        width: 300px
+    }
+    .demo_wrap h1 span {
+        font-size: .938em;
+        color: #009d85;
+        display: inline-block;
+    }
+    @media screen and (max-width:545px) {
+        .demo_wrap h1 {
+            width: 100%;
+            float: none;
+            text-align: center;
+        }
+        .demo_wrap h1 img {
+            margin: 0 0 20px;
+        }
+    }
+    .num {
+        width: 12%
+    }
+    h2 {
+        text-align: left;
+        margin: 0 0 10px 0;
+    }
+    body {
+        counter-reset: num
+    }
+    table {
+        margin-bottom: 1em
+    }
+    table caption {
+        text-align: left;
+        font-weight: bold;
+        font-size: 1.25em;
+        padding: .5em 0;
+        color: #ff5050
+    }
+    tbody tr td:first-child:before {
+        counter-increment: num;
+        display: block;
+        text-align: center;
+        content: counters(num, ".") " "
+    }
+    tbody tr td:nth-child(2) {
+        width: 35%
+    }
+    table th {
+        background-color: #666;
+    }
+    table thead {
+        border-right: #666 8px solid;
+        border-left: #666 8px solid;
+    }
+    .btn_grp {
+        text-align: right;
+    }
+    @media screen and (max-width:545px) {
+        .btn_grp {
+            text-align: center;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="demo_wrap">
+        <h1><img src="one_page/images/logo.svg" alt=""><span>主題網站</span></h1>
+        <div class="btn_grp">
+            <a href="#" class="btn">切版檔案請按此下載</a>
+        </div>
+        <hr>
+        <div class="table_wrapper">
+            <h2>單頁式</h2>
+            <!-- hyUI 標準頁面 -->
+            <table>
+                <thead>
+                    <tr>
+                        <th class="num">編號</th>
+                        <th>頁面名稱</th>
+                        <th>檔案名稱</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>主題網_戶外探索</td>
+                        <!-- 連結放到a裡面就好 -->
+                        <td><a href="one_page/mp_01.htm"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>主題網_生物</td>
+                        <!-- 連結放到a裡面就好 -->
+                        <td><a href="one_page/mp_02.htm"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>主題網_地質</td>
+                        <!-- 連結放到a裡面就好 -->
+                        <td><a href="one_page/mp_03.htm"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>主題網_科教動手做</td>
+                        <!-- 連結放到a裡面就好 -->
+                        <td><a href="one_page/mp_04.htm"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>主題網_植物園</td>
+                        <!-- 連結放到a裡面就好 -->
+                        <td><a href="one_page/mp_05.htm"></a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+             <h2>多頁式</h2>
+             
+        </div>
+    </div>
+    <a href="javascript:;" class="scrollToTop">回頁首</a>
+    <script src="one_page/js/jquery-3.3.1.min.js"></script>
+    <script src="one_page/vendor/jquery.easing.min.js"></script>
+    <script src="one_page/js/hyui.js"></script>
+    <script src="one_page/js/customize.js"></script>
+    <script>
+    $(function() {
+        $('tbody').find('a').each(function(index, el) {
+            var Link = $(this).attr('href');
+            $(this).text(Link);
+        });
+    })
+    </script>
+</body>
+
+</html>
