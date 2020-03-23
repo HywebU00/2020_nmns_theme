@@ -43,7 +43,7 @@ $(function() {
     ////////////// 行動版選單切換////////////
     /*-----------------------------------*/
     _body.prepend('<aside class="sidebar"><div class="m_area"><button type="button" class="sidebarClose">關閉</button></div><div class="menu_overlay"></div></aside>');
-    $('header .container').prepend('<button type="button" class="sidebarCtrl">側欄選單</button><button type="button" class="searchCtrl">查詢</button>');
+    $('header .container').prepend('<button type="button" class="sidebarCtrl">側欄選單</button>');
     var menu_status = false;
     var _sidebar = $('.sidebar'),
         _search = $('.search'),
@@ -113,6 +113,7 @@ $(function() {
             _menu.prependTo(_mArea);
             _search.prependTo(_body);
             _search.addClass('m_search');
+             $('h1').insertBefore('.main .container');
             _mArea.css({
                 'margin-left': _mArea.width() * -1 + 'px'
             });
@@ -157,6 +158,7 @@ $(function() {
             /*-----------------------------------*/
             hideSidebar();
             _body.removeClass('noscroll');
+           $('h1').prependTo('.header .container');
             _nav.prependTo('.header .container');
             _search.appendTo('.header .container');
             _menu.appendTo('.header .container');
@@ -213,26 +215,7 @@ $(function() {
         $('.m_search').hide();
         search_mode = false;
     });
-    // 固定版頭
-    hh = Math.floor($('.header').outerHeight(true));
-    if ($('header').has('menu')) {
-        var stickyMenuTop = Math.floor($('.header .menu').offset().top);
-        // console.log(stickyMenuTop);
-        hh = Math.floor($('.header').outerHeight(true));
-        menuH = Math.floor(_menu.outerHeight(true));
-        $(window).bind("load scroll resize", function(e) {
-            ww = _window.outerWidth();
-            if (ww >= wwSmall && $(this).scrollTop() > stickyMenuTop) {
-                $('.header').addClass('fixed');
-                $('.header').css('margin-top', menuH - hh);
-                $('.main').css('margin-top', hh);
-            } else {
-                $('.header').removeClass('fixed');
-                $('.header').css('margin-top', 0);
-                $('.main').css('margin-top', 0);
-            }
-        });
-    }
+    
     /*-----------------------------------*/
     //////////// notice訊息區塊 ////////////
     /*-----------------------------------*/
@@ -644,7 +627,7 @@ $(function() {
     // /*------------------------------------*/
     $('table').each(function(index, el) {
         //判斷沒有table_list
-        if ($(this).parents('.table_list').length == 0 && $(this).parents('.fix_th_table').length == 0 && $(this).parent('form').length == 0) {
+        if ($(this).parents('.table_list').length == 0 && $(this).parents('.fix_th_table').length == 0 && $(this).parent('form').length == 0 && $(this).parents('.table_list_thleft').length == 0 && $(this).parents('.activity_Tb').length == 0 ) {
             $(this).scroltable();
         }
     });
@@ -701,6 +684,26 @@ $(function() {
         });
     }
     rwdTable();
+    // 固定版頭
+    hh = Math.floor($('.header').outerHeight(true));
+    if ($('header').has('menu')) {
+        var stickyMenuTop = Math.floor($('.header .menu').offset().top);
+        // console.log(stickyMenuTop);
+        hh = Math.floor($('.header').outerHeight(true));
+        menuH = Math.floor(_menu.outerHeight(true));
+        $(window).bind("load scroll resize", function(e) {
+            ww = _window.outerWidth();
+            if (ww >= wwSmall && $(this).scrollTop() > stickyMenuTop) {
+                $('.header').addClass('fixed');
+                $('.header').css('margin-top', menuH - hh);
+                $('.main').css('margin-top', hh);
+            } else {
+                $('.header').removeClass('fixed');
+                $('.header').css('margin-top', 0);
+                $('.main').css('margin-top', 0);
+            }
+        });
+    }
     /*-----------------------------------*/
     ////////////// lazy load //////////////
     /*-----------------------------------*/
@@ -713,4 +716,21 @@ $(function() {
             threshold: 0
         });
     }
+    /*-----------------------------------*/
+    ////////////// 固定左邊th //////////////
+    /*-----------------------------------*/
+
+    // 固定左邊th
+    var _scContent = $('.scrollX').find('.table_list_thleft');
+    var _scTable = _scContent.find('table');
+    var wHead = _scTable.find('tr').eq(0).children().first().innerWidth();
+    var colCount = _scTable.find('tr').first().find('td').length;
+    var tbWidth;
+    // if (ww <= wwSmall) {
+    //     wCell = .96 * ww - wHead;
+    // } else {
+    //     wCell = 200;
+    // }
+    tbWidth = _scTable.width(wHead + 160 * colCount);
+    $('.table_list_thleft').clone().insertAfter('.table_list_thleft').addClass('table_list_fixed_thleft');
 });

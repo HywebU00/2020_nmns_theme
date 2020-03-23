@@ -2,27 +2,50 @@ footer {
     @include box-sizing(border-box);
     @include clearfix;
     text-align: left;
-    font-size: 0.813em;
-    padding: 1em 0;
+    padding: 0;
+    position: relative;
     .container {
-        @include gutter;
+        @include box-sizing;
+        @include screen('xs_mobile'){
+            padding: 0;
+        }
         >div {
             padding-bottom: 1em;
         }
     }
+    .background_block {
+        background-color: nth($primaryColor, $style);
+        overflow: hidden;
+        border-radius: 5px 5px 0 0;
+        color: #fff;
+        padding: 50px 50px 50px 60px;
+        position: relative;
+        @include screen('tablet') {
+            padding: 50px 30px;
+        }
+        @include screen('mobile') {
+            padding: 50px 20px;
+        }
+        @include screen('xs_mobile'){
+             border-radius: 0;
+              padding: 30px 20px 60px;
+        }
+        
+    }
     a {
         text-decoration: none;
-        color: $primaryColor;
+        color: #fff;
         &:hover,
         &:focus {
-            color: darken($primaryColor, 10);
+            color: $color-yellow;
+            ;
         }
     }
     .footer_logo {
-        @include make-xs-column(8);
-        @include make-sm-column(3);
-        @include make-md-column(3);
-        @include make-lg-column(3);
+        @include make-xs-column(0);
+        @include make-sm-column(0);
+        @include make-md-column(0);
+        @include make-lg-column(0);
         @include gutter();
     }
     .footer_info {
@@ -34,9 +57,9 @@ footer {
     }
     .footer_icon {
         @include make-xs-column(12);
-        @include make-sm-column(3);
-        @include make-md-column(3);
-        @include make-lg-column(3);
+        @include make-sm-column(6);
+        @include make-md-column(6);
+        @include make-lg-column(6);
         @include gutter();
     }
     // 版權連結
@@ -50,9 +73,8 @@ footer {
             a {
                 display: block;
                 padding: .5em 1em;
-                background: $primaryColor;
                 color: #FFF;
-                border-radius:4px;
+                border-radius: 5px;
                 @include transition(all, .3s, ease-out);
                 &:hover,
                 &:focus {
@@ -63,14 +85,16 @@ footer {
     }
     p {
         line-height: 1.65em;
+        margin: 0 0 25px 0;
     }
     .update,
     .counter {
-        display: inline-block;
+        // display: inline-block;
         margin-right: 5px;
+        float: right;
         em {
             font-style: normal;
-            color: $primaryColor;
+            color: #fff;
             padding: 0 .5em;
         }
     }
@@ -78,8 +102,8 @@ footer {
         a {
             display: inline-block;
             vertical-align: top;
-            position:relative;
-             &:focus {
+            position: relative;
+            &:focus {
                 &:after {
                     content: "";
                     width: 100%;

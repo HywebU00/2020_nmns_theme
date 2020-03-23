@@ -1,7 +1,7 @@
 // tab的外框線
 a:focus {
     outline: none;
-    box-shadow: 0 0px 0px 1px $aHover inset;
+    box-shadow: 0 0px 0px 1px $color-yellow inset;
     @include screen('mobile') {
         box-shadow: none;
     }
@@ -13,7 +13,7 @@ a:focus {
     top: 5px;
     left: 5px;
     z-index: 9;
-    color: $color-word;
+    color:#fff;
     font-size: $font-size;
     @include screen("mobile") {
         display: none;
@@ -91,20 +91,21 @@ a.more {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: url(../images/basic/top.png) no-repeat center top rgba(0, 0, 0, 0.4);
+    background: url(../images/basic/top.png) no-repeat center top nth($lightColor,$style);
+    opacity: .7;
     text-align: center;
     color: #FFF;
     line-height: 50px;
     text-decoration: none;
     position: fixed;
-    bottom: 10px;
+    bottom: 170px;
     right: 10px;
     transition: .3s ease-out;
     display: none;
     z-index: 99999999;
     text-indent: -999999px;
     &:hover,&:focus{
-        background: url(../images/basic/top.png) no-repeat center top rgba(0, 0, 0, 0.8);
+       opacity: 1;
         box-shadow:none;
     }
 }

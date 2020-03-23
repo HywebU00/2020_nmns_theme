@@ -1,27 +1,26 @@
 //header
 .header {
-    position: relative;
     z-index: 99;
-    background: #FFF;
-    box-shadow: 0px 2px 5px RGBA(0, 0, 0, .3);
     @extend %clearfix;
     @include screen('mobile') {
         position: fixed;
         width: 100%;
+        height: 60px;
+        background-color: nth($primaryColor,$style);
     }
     // 虛擬底色 - navigation bg
-    &:before {
-        content: "";
-        width: 100%;
-        height: 2.4em;
-        background: #F2F2F2;
-        position: absolute;
-        top: 0;
-        left: 0;
-        @include screen('mobile') {
-            display: none;
-        }
-    }
+    // &:before {
+    //     content: "";
+    //     width: 100%;
+    //     height: 2.4em;
+    //     background: #F2F2F2;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     @include screen('mobile') {
+    //         display: none;
+    //     }
+    // }
     // mobile btn for extend
     %mobileCtrlBtn {
         width: 60px !important;
@@ -52,7 +51,7 @@
             @extend %mobileCtrlBtn;
             span {
                 position: absolute;
-                background: $primaryColor;
+                background: #fff;
                 width: 50%;
                 height: 4px;
                 top: 35%;
@@ -88,32 +87,33 @@
         }
     }
     h1 {
-        float: left;
-        width: 300px;
-        height: 75px;
-        margin: 0;
+        width: 100%;
+        position: relative;
+        margin: 30px 0 0;
         padding: 0;
+        font-size: 1.5em;
+        letter-spacing: .1em;
         @include box-sizing;
         a {
-            display: inline-block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: block;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, .8);
+            border-radius: 0 5px 0 5px;
+            color: #fff;
+            font-family: 'Noto Serif TC', serif;
+            width: 45%;
+            line-height: 1.3em;
         }
         img {
             display: block;
-            max-width: 300px;
-            max-height: 75px;
+            width: 100%;
+            border-radius: 5px;
         }
         @include screen('mobile') {
-            padding: 2px 60px;
-            width: 100%;
-            text-align: center;
-            height: 60px;
-            img {
-                width: auto;
-                height: auto;
-                max-height: 54px;
-                margin: 0px auto;
-                transform: scale(.8);
-            }
+            display: none;
         }
     }
     // 導覽列
@@ -175,7 +175,7 @@
         float: left;
         margin-right: .3em;
         width: 70%;
-        position:relative;
+        position: relative;
         input {
             margin: -0.2em 0 0;
             padding: .2em 35px .2em .5em;
@@ -195,13 +195,13 @@
                 background: url(../images/basic/icon_search.png) no-repeat center center;
                 background-size: 20px;
                 outline: 1px solid transparent;
-                border:none;
-                display:block;
+                border: none;
+                display: block;
                 opacity: .8;
                 min-width: 0em !important;
-                position:absolute;
-                right:.2em;
-                top:8%;
+                position: absolute;
+                right: .2em;
+                top: 8%;
                 @include box-sizing;
                 &:hover,
                 &:focus {
@@ -340,20 +340,12 @@
     position: fixed;
     width: 100%;
     right: 0;
-    top: 0;
+    top: -1px;
     box-shadow: rgba(0, 0, 0, .5) 0 0 25px;
-    background: rgba(0, 0, 0, .75);
+    background-color:#FFF;
     z-index: 999;
     @include screen('mobile') {
         background: #FFF;
     }
-    .menu {
-        >ul {
-            >li {
-                >a {
-                    color: #FFF;
-                }
-            }
-        }
-    }
+    
 }

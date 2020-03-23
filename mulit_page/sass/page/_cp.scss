@@ -2,23 +2,35 @@
 // 文章標題
 h1.title, h2.title {
     line-height: 1.25em;
-    margin: .4em 0;
+    margin: 0 0 50px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    &:before {
+        content: '';
+        width: 50px;
+        height: 3px;
+        background-color: nth($lightColor, $style);
+        position: absolute;
+        left: 50%;
+        bottom: -10px;
+        margin-left: -25px;
+    }
 }
 .cp {
     .pic {
         float: left;
-        margin: 0px 1em 1em 0;
-        width: auto;
-        width: 45%;
-        max-width: 400px;
-        background: #F1F1F1;
+        margin: 0px 3em 2em 0;
+        width: 380px;
         overflow: hidden;
-        padding: .5em .5em .2em;
+        padding: 0;
         img {
             float: none;
             width: 100%;
             margin: 0;
-            display:block;
+            display: block;
+            border-radius: 5px;
         }
         span {
             text-align: center;
@@ -32,6 +44,28 @@ h1.title, h2.title {
             margin: 0px auto;
             display: block;
             margin-bottom: .5em;
+        }
+    }
+    .image {
+        float: left;
+        margin: 0px 3em 2em 0;
+        width: 380px;
+        overflow: hidden;
+        padding: 0;
+        img {
+            float: none;
+            width: 100%;
+            margin: 0;
+            display: block;
+            border-radius: 5px;
+        }
+        @include screen('mobile') {
+            float: none;
+            max-width: 100%;
+            width: 100%;
+            margin: 0px auto;
+            display: block;
+            margin-bottom: 2em;
         }
     }
     &.small_size {
@@ -70,17 +104,68 @@ h1.title, h2.title {
     a {
         @include aSetting;
     }
+    ul, ol {
+        line-height: 1.6em;
+        margin: 0 0 0 25px;
+        padding:0;
+        li {
+            margin-bottom: 15px;
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+    ul{
+        list-style-type: none;
+        margin: 0;
+    }
+
+    p.blockclear {
+        float: none;
+        clear: both;
+    }
+    h3 {
+        font-size: 1.25em;
+        color: nth($primaryColor, $style);
+        margin: 0 0 10px;
+        padding: 0 0 0 25px;
+        position: relative;
+        font-weight: 500;
+        letter-spacing: .05em;
+        &:before {
+            content: '';
+            border: 8px solid nth($primaryColor, $style);
+            border-color: transparent transparent transparent nth($primaryColor, $style);
+            position: absolute;
+            top: 6px;
+            left: 5px;
+        }
+    }
+    .refund {
+            margin: 0 0 30px;
+            text-align: center;
+            @include screen('tablet') {
+                img {
+                    width: 95%;
+                }
+            }
+            @include screen('mobile') {
+                img {
+                    width: 100%;
+                }
+            }
+        }
 }
 // 文章標籤
 div.tag {
     @extend %clearfix;
     padding: .5em 0 .5em 1.5em;
     margin-bottom: .5em;
-    position:relative;
+    position: relative;
     &:before {
         display: block;
-        position:absolute;
-        top:.3em;
+        position: absolute;
+        top: .3em;
         left: .1em;
         content: "";
         width: 1em;
@@ -102,8 +187,8 @@ div.tag {
                 border-radius: 4px;
                 border: 1px solid #DDD;
                 padding: .2em .5em;
-                &:hover,&:focus {
-                    border:1px solid $aHover;
+                &:hover, &:focus {
+                    border: 1px solid $aHover;
                 }
             }
         }
@@ -400,7 +485,7 @@ div.tag {
     padding: 0.8em 1.5em 0.8em;
     background: #F2F2F2;
     @extend %clearfix;
-     @include box-sizing;
+    @include box-sizing;
     @include screen('mobile') {
         font-size: 0.938em;
     }
