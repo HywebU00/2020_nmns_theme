@@ -21,13 +21,13 @@
         &:hover,
         &:focus {
             color: #FFF;
-            @include gradient(darken($primaryColor, 0), darken($primaryColor, 15), vertical);
-            border: 1px solid darken($primaryColor, 15);
+            @include gradient(darken(nth($primaryColor,$style), 0), darken(nth($primaryColor,$style), 15), vertical);
+            border: 1px solid darken(nth($primaryColor,$style), 15);
             box-shadow: none;
         }
         &.active {
             color: #FFF;
-            @include gradient(darken($primaryColor, 0), darken($primaryColor, 15), vertical);
+            @include gradient(darken(nth($primaryColor,$style), 0), darken(nth($primaryColor,$style), 15), vertical);
         }
         span {
             font-size: .813em;

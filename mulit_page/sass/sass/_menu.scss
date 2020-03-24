@@ -158,7 +158,7 @@
                 padding-right: 2em;
                 &:hover,
                 &:focus {
-                    background: $primaryColor;
+                    background:nth($primaryColor,$style);
                 }
                 &:after {
                     content: '';
@@ -229,7 +229,7 @@
             color: #FFF;
             width: 100%;
             height: 3em;
-            background: $primaryColor;
+            background: nth($primaryColor,$style);
             padding: 0 1em;
             line-height: 3em;
             @include box-sizing;
@@ -240,7 +240,7 @@
         top: 0;
         left: 0;
         height: 100%;
-        background: $primaryColor;
+        background:nth($primaryColor,$style);
         overflow:hidden;
         overflow-y: auto;
         z-index: 9999;
@@ -427,7 +427,7 @@
                     }
                     &:hover,
                     &:focus {
-                        background: darken($primaryColor, 20);
+                        background: darken(nth($primaryColor,$style), 20);
                     }
                 }
             }

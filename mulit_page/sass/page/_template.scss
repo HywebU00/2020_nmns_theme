@@ -5,7 +5,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background-color: $secondaryColor;
+
     &.noscroll {
         position: static !important;
         width: 100%;
@@ -15,11 +15,13 @@ body {
         margin: 0;
         padding: 0;
     }
+
 }
 // 最外圍預設為100%
 .wrapper {
     width: 100%;
     margin: 0px auto;
+    background-color:nth($secondaryColor,$style);
     @include screen('mobile') {
         background: #FFF;
         overflow: hidden;
@@ -48,6 +50,7 @@ body {
             }
         }
     }
+    
 }
 // 整體共用container樣式，請注意首頁切版頁面的整齊
 .container {
@@ -61,9 +64,11 @@ body {
     position: relative;
     margin: 0 auto;
     padding: 0;
+
     // 可先設定一個中央區塊最大寬，限制accesskey對齊
     @include screen('mobile') {
         padding-top: 60px;
+         background-color: #fff;
     }
     h2 {
         line-height: 1.25em;

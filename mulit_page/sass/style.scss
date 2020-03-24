@@ -1,0 +1,54 @@
+@import "_variable"; //變數
+@import "sass/_normalize"; //reset
+@import "sass/_mixin"; //客製MIXIN
+@import "sass/_typography"; //CP文字排版
+@import "sass/_font"; //文字設定
+@import "sass/_btn"; //按鈕設定
+.container {
+    padding: 0 30px;
+    margin: 0 auto;
+    max-width: $container-max; //請看_variable.scss
+    // outline: 1px solid red;
+}
+// a {
+//     color: nth($primaryColor, $style);
+//     &:hover {
+//         color: $aHover;
+//     }
+// }
+// 版型02
+.version02 {
+    $style: index($sites, version02);
+    background-color: nth($secondaryColor, $style) !important;
+    .menu {
+        >ul {
+            >li {
+                >a {
+                    &:before {
+                        background-color: nth($primaryColor, $style);
+                    }
+                    &:hover, &:focus {
+                        color: nth($primaryColor, $style);
+                    }
+                }
+            }
+        }
+    }
+    .sidebar {
+        .m_area {
+            &:before {
+                background: nth($primaryColor, $style);
+            }
+            background:nth($primaryColor, $style);
+            .menu {
+                li {
+                    >a {
+                        &:before {
+                            background-color: nth($secondaryColor, $style);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -92,7 +92,7 @@ $btn-radius:.2em;
 }
 .btn-submit {
     @extend %btn;
-    @include btn_setting(lighten($lightColor, 5), #FFF);
+    @include btn_setting(lighten(nth($lightColor, $style), 5), #FFF);
 }
 .btn-reset {
     @extend %btn;
