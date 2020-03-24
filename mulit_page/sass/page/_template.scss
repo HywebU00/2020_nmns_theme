@@ -15,18 +15,6 @@ body {
         margin: 0;
         padding: 0;
     }
-
-}
-// 最外圍預設為100%
-.wrapper {
-    width: 100%;
-    margin: 0px auto;
-    background-color:nth($secondaryColor,$style);
-    @include screen('mobile') {
-        background: #FFF;
-        overflow: hidden;
-        overflow-y: auto;
-    }
     &.menu_vertical {
         position: relative;
         .header {
@@ -50,6 +38,19 @@ body {
             }
         }
     }
+
+}
+// 最外圍預設為100%
+.wrapper {
+    width: 100%;
+    margin: 0px auto;
+    background-color:nth($secondaryColor,$style);
+    @include screen('mobile') {
+        background: #FFF;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+    
     
 }
 // 整體共用container樣式，請注意首頁切版頁面的整齊
@@ -73,12 +74,7 @@ body {
     h2 {
         line-height: 1.25em;
     }
-    // .accesskey {
-    //     color: nth($secondaryColor, $style);
-    //     @media(max-width: 1200){
-    //         color: #fff!important;
-    //     }
-    // }
+    
     h1 {
         width: auto;
         position: relative;

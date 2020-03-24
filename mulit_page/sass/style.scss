@@ -19,7 +19,24 @@
 // 版型02
 .version02 {
     $style: index($sites, version02);
-    background-color: nth($secondaryColor, $style) !important;
+    // _template.scss
+    .wrapper {
+        background-color: nth($secondaryColor, $style);
+    }
+    .main {
+        h1 {
+            a {
+                color: nth($primaryColor, $style);
+            }
+        }
+    }
+    // _header.scss
+    .header {
+        @include screen('mobile') {
+            background-color: nth($primaryColor, $style);
+        }
+    }
+    // _menu.scss
     .menu {
         >ul {
             >li {
@@ -49,6 +66,28 @@
                     }
                 }
             }
+        }
+    }
+    // _breadcrumb.scss
+    .breadcrumb {
+        &:before {
+            background-color: nth($lightColor, $style);
+        }
+    }
+    // _cp.scss
+    h1.title, h2.title {
+        &:before {
+            background-color: nth($lightColor, $style);
+        }
+    }
+    // _element.scss
+    .scrollToTop {
+        background: url(../images/basic/top.png) no-repeat center top nth($lightColor, $style);
+    }
+    // _footer.scss
+    footer {
+        .background_block {
+            background-color: nth($primaryColor, $style);
         }
     }
 }

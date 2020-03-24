@@ -6,7 +6,6 @@
     z-index: 99;
     // 預設選單 ul
     clear: both;
-
     @include screen('mobile') {
         display: none;
     }
@@ -61,9 +60,8 @@
                 &:hover, &:focus {
                     transform: scale(1.2);
                     color: nth($primaryColor, $style);
-                    box-shadow:none;
+                    box-shadow: none;
                 }
-                
             }
             &:nth-child(2) {
                 >a {
@@ -158,7 +156,7 @@
                 padding-right: 2em;
                 &:hover,
                 &:focus {
-                    background:nth($primaryColor,$style);
+                    background: nth($primaryColor, $style);
                 }
                 &:after {
                     content: '';
@@ -176,15 +174,15 @@
         }
     }
 }
-.menu_vertical{
-    .menu{
-        position:fixed;
-        top:0;
+.menu_vertical {
+    .menu {
+        position: fixed;
+        top: 0;
         width: 140px;
         margin-left: -160px;
         background-color: #fff;
-        >ul{
-            >li{
+        >ul {
+            >li {
                 margin-bottom: 20px;
             }
         }
@@ -229,7 +227,7 @@
             color: #FFF;
             width: 100%;
             height: 3em;
-            background: nth($primaryColor,$style);
+            background: nth($primaryColor, $style);
             padding: 0 1em;
             line-height: 3em;
             @include box-sizing;
@@ -240,7 +238,7 @@
         top: 0;
         left: 0;
         height: 100%;
-        background:nth($primaryColor,$style);
+        background:nth($primaryColor, $style);
         overflow:hidden;
         overflow-y: auto;
         z-index: 9999;
@@ -427,7 +425,7 @@
                     }
                     &:hover,
                     &:focus {
-                        background: darken(nth($primaryColor,$style), 20);
+                        background: darken(nth($primaryColor, $style), 20);
                     }
                 }
             }
@@ -489,6 +487,19 @@
             transform: rotate(45deg);
             border-right: none;
             border-top: none;
+        }
+    }
+}
+.menu_vertical {
+    .sidebar {
+        .m_area {
+            .menu {
+                position: relative;
+                top:auto;
+                li {
+                    margin: 0;
+                }
+            }
         }
     }
 }
