@@ -100,6 +100,9 @@ $(function() {
         _menu.find('li ul').hide();
     });
     // 切換PC/Mobile 選單
+    _menu.clone().prependTo(_mArea);
+    _nav.clone().prependTo(_mArea);
+
     function mobileMenu() {
         ww = _window.outerWidth();
         if (ww < wwSmall) {
@@ -109,11 +112,9 @@ $(function() {
             menu_status = false;
             _sidebar.hide();
             _overlay.hide();
-            _nav.prependTo(_mArea);
-            _menu.prependTo(_mArea);
             _search.prependTo(_body);
             _search.addClass('m_search');
-             $('h1').insertBefore('.main .container');
+            $('h1').insertBefore('.main .container');
             _mArea.css({
                 'margin-left': _mArea.width() * -1 + 'px'
             });
@@ -158,10 +159,8 @@ $(function() {
             /*-----------------------------------*/
             hideSidebar();
             _body.removeClass('noscroll');
-           $('h1').prependTo('.header .container');
-            _nav.prependTo('.header .container');
+            $('h1').prependTo('.header .container');
             _search.appendTo('.header .container');
-            _menu.appendTo('.header .container');
             _search.removeClass('m_search');
             _search.show();
             search_mode = false;
@@ -215,7 +214,6 @@ $(function() {
         $('.m_search').hide();
         search_mode = false;
     });
-    
     /*-----------------------------------*/
     //////////// notice訊息區塊 ////////////
     /*-----------------------------------*/
@@ -627,7 +625,7 @@ $(function() {
     // /*------------------------------------*/
     $('table').each(function(index, el) {
         //判斷沒有table_list
-        if ($(this).parents('.table_list').length == 0 && $(this).parents('.fix_th_table').length == 0 && $(this).parent('form').length == 0 && $(this).parents('.table_list_thleft').length == 0 && $(this).parents('.activity_Tb').length == 0 ) {
+        if ($(this).parents('.table_list').length == 0 && $(this).parents('.fix_th_table').length == 0 && $(this).parent('form').length == 0 && $(this).parents('.table_list_thleft').length == 0 && $(this).parents('.activity_Tb').length == 0) {
             $(this).scroltable();
         }
     });
@@ -692,15 +690,19 @@ $(function() {
         hh = Math.floor($('.header').outerHeight(true));
         menuH = Math.floor(_menu.outerHeight(true));
         $(window).bind("load scroll resize", function(e) {
-            ww = _window.outerWidth();
-            if (ww >= wwSmall && $(this).scrollTop() > stickyMenuTop) {
-                $('.header').addClass('fixed');
-                $('.header').css('margin-top', menuH - hh);
-                $('.main').css('margin-top', hh);
-            } else {
-                $('.header').removeClass('fixed');
-                $('.header').css('margin-top', 0);
-                $('.main').css('margin-top', 0);
+            //判斷畫面上沒有 .menu_vertical
+            if ($('.menu_vertical').length == 0) {
+                // console.log('AAA');
+                ww = _window.outerWidth();
+                if (ww >= wwSmall && $(this).scrollTop() > stickyMenuTop) {
+                    $('.header').addClass('fixed');
+                    $('.header').css('margin-top', menuH - hh);
+                    $('.main').css('margin-top', hh);
+                } else {
+                    $('.header').removeClass('fixed');
+                    $('.header').css('margin-top', 0);
+                    $('.main').css('margin-top', 0);
+                }
             }
         });
     }
@@ -719,7 +721,6 @@ $(function() {
     /*-----------------------------------*/
     ////////////// 固定左邊th //////////////
     /*-----------------------------------*/
-
     // 固定左邊th
     var _scContent = $('.scrollX').find('.table_list_thleft');
     var _scTable = _scContent.find('table');

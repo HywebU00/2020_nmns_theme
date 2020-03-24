@@ -176,6 +176,20 @@
         }
     }
 }
+.menu_vertical{
+    .menu{
+        position:fixed;
+        top:0;
+        width: 140px;
+        margin-left: -160px;
+        background-color: #fff;
+        >ul{
+            >li{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
 // 行動版選單sidebar
 .sidebar {
     position: fixed;

@@ -1,5 +1,5 @@
 .breadcrumb {
-    padding: .1em 0em .1em .5em;
+    padding: 1em 0em .1em .5em;
     margin: 0px auto 15px;
     position: relative;
     &:before{
@@ -9,7 +9,7 @@
         background-color: nth($lightColor,$style);
         position: absolute;
         left:0;
-        top:6px;
+        top:20px;
     }
     ul {
         @include li-reset;

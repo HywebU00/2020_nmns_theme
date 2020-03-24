@@ -2,6 +2,7 @@
 .header {
     z-index: 99;
     @extend %clearfix;
+    position: relative;
     @include screen('mobile') {
         position: fixed;
         width: 100%;
@@ -89,7 +90,7 @@
     h1 {
         width: 100%;
         position: relative;
-        margin: 30px 0 0;
+        margin: 30px 0 0px;
         padding: 0;
         font-size: 1.5em;
         letter-spacing: .1em;
