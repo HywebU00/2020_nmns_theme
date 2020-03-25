@@ -185,6 +185,7 @@ $(function() {
             });
         }
     }
+         
     //設定resize 計時器
     var resizeTimer;
     _window.bind("load resize", function(event) {
@@ -214,6 +215,30 @@ $(function() {
         $('.m_search').hide();
         search_mode = false;
     });
+    // 固定版頭
+    hh = Math.floor($('.header').outerHeight(true));
+    if ($('header').has('menu')) {
+        var stickyMenuTop = Math.floor($('.header .menu').offset().top);
+        // console.log(stickyMenuTop);
+        hh = Math.floor($('.header').outerHeight(true));
+        menuH = Math.floor(_menu.outerHeight(true));
+        $(window).bind("load scroll resize", function(e) {
+            //判斷畫面上沒有 .menu_vertical
+            if ($('.menu_vertical').length == 0) {
+                // console.log('AAA');
+                ww = _window.outerWidth();
+                if (ww >= wwSmall && $(this).scrollTop() > stickyMenuTop) {
+                    $('.header').addClass('fixed');
+                    $('.header').css('margin-top', menuH - hh);
+                    $('.main').css('margin-top', hh);
+                } else {
+                    $('.header').removeClass('fixed');
+                    $('.header').css('margin-top', 0);
+                    $('.main').css('margin-top', 0);
+                }
+            }
+        });
+    }  
     /*-----------------------------------*/
     //////////// notice訊息區塊 ////////////
     /*-----------------------------------*/
@@ -682,30 +707,7 @@ $(function() {
         });
     }
     rwdTable();
-    // 固定版頭
-    hh = Math.floor($('.header').outerHeight(true));
-    if ($('header').has('menu')) {
-        var stickyMenuTop = Math.floor($('.header .menu').offset().top);
-        // console.log(stickyMenuTop);
-        hh = Math.floor($('.header').outerHeight(true));
-        menuH = Math.floor(_menu.outerHeight(true));
-        $(window).bind("load scroll resize", function(e) {
-            //判斷畫面上沒有 .menu_vertical
-            if ($('.menu_vertical').length == 0) {
-                // console.log('AAA');
-                ww = _window.outerWidth();
-                if (ww >= wwSmall && $(this).scrollTop() > stickyMenuTop) {
-                    $('.header').addClass('fixed');
-                    $('.header').css('margin-top', menuH - hh);
-                    $('.main').css('margin-top', hh);
-                } else {
-                    $('.header').removeClass('fixed');
-                    $('.header').css('margin-top', 0);
-                    $('.main').css('margin-top', 0);
-                }
-            }
-        });
-    }
+    
     /*-----------------------------------*/
     ////////////// lazy load //////////////
     /*-----------------------------------*/
