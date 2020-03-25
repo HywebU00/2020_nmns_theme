@@ -3,11 +3,11 @@
 
 //-------------------------------------------------------------顏色---------//
 // 定義顏色 此顏色可自由變換
-$sites:version01, version02;
-$primaryColor: #601986, #0f3f89; //主色
-$secondaryColor: #8f7eb8, #017bc4; //輔色
-$lightColor: #ff385c, #448aff; //點綴
-$linkColor: #601986, #0f3f89; //連結
+$sites:version01, version02, version03, version04, version05;
+$primaryColor: 	#601986, #0f3f89, #33691e, #006064, #6e573c; //主色
+$secondaryColor: #8f7eb8, #017bc4, #92ce70, #80cbc4, #cc9766; //輔色
+$lightColor: #ff385c, #448aff, #59d62e, #15dbc8, #e1ac59; //點綴
+$linkColor: #601986, #0f3f89, #33691e, #006064, #6e573c; //連結
 $importantColor: #ff3e4d; //重要
 $style: index($sites,version01) ; //選擇initial後 = $style:1
 // 但注意真實顏色與語意的關聯必須易於辨識

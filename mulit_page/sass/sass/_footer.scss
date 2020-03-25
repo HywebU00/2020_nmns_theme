@@ -6,7 +6,7 @@ footer {
     position: relative;
     .container {
         @include box-sizing;
-        @include screen('xs_mobile'){
+        @include screen('xs_mobile') {
             padding: 0;
         }
         >div {
@@ -26,11 +26,10 @@ footer {
         @include screen('mobile') {
             padding: 50px 20px;
         }
-        @include screen('xs_mobile'){
-             border-radius: 0;
-              padding: 30px 20px 60px;
+        @include screen('xs_mobile') {
+            border-radius: 0;
+            padding: 30px 20px 60px;
         }
-        
     }
     a {
         text-decoration: none;
@@ -78,7 +77,7 @@ footer {
                 @include transition(all, .3s, ease-out);
                 &:hover,
                 &:focus {
-                    background: darken(nth($primaryColor,$style), 10);
+                    background: darken(nth($primaryColor, $style), 10);
                 }
             }
         }
@@ -118,6 +117,24 @@ footer {
         }
         img {
             max-width: 120px;
+        }
+    }
+}
+.menu_vertical {
+    footer {
+        .background_block {
+            padding: 50px 50px 50px 120px;
+            position: relative;
+            @include screen('tablet') {
+                padding: 50px 30px 50px 120px;
+            }
+            @include screen('mobile') {
+                padding: 50px 20px;
+            }
+            @include screen('xs_mobile') {
+                border-radius: 0;
+                padding: 30px 20px 60px;
+            }
         }
     }
 }

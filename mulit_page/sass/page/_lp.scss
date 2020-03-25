@@ -95,16 +95,19 @@
     padding: 20px;
     background-color: #eee;
     display: none;
-    h3 {
+    .title {
          position: relative;
          display: inline-block;
+         color:#333;
+         font-size: 1.25em;
+         font-weight: 600;
          &:before{
             content: '';
             position: absolute;
             width: 20px;
             height: 2px!important;
-            background-color:nth($primaryColor, $style);
-            left:-20px;
+            background-color:#333;
+            left:-40px;
             top:12px;
              border:none;
 
@@ -114,7 +117,7 @@
             position: absolute;
             width: 20px;
             height: 2px;
-            background-color:nth($primaryColor, $style);
+            background-color:#333;
             right:-40px;
             top:12px;
 

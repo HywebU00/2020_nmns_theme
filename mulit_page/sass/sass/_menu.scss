@@ -177,10 +177,11 @@
 .menu_vertical {
     .menu {
         position: fixed;
-        top: 0;
+        top:10px;
         width: 140px;
         margin-left: -160px;
         background-color: #fff;
+        border-radius: 0 0 30px 0;
         >ul {
             >li {
                 margin-bottom: 20px;

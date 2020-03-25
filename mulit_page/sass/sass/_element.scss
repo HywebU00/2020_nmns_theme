@@ -91,8 +91,8 @@ a.more {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: url(../images/basic/top.png) no-repeat center top nth($lightColor,$style);
-    opacity: .7;
+    background: url(../images/basic/top.png) no-repeat center top nth($primaryColor,$style);
+    opacity: 1;
     text-align: center;
     color: #FFF;
     line-height: 50px;
@@ -104,6 +104,9 @@ a.more {
     display: none;
     z-index: 99999999;
     text-indent: -999999px;
+    @include screen('notebook'){
+        background: url(../images/basic/top.png) no-repeat center top nth($lightColor,$style);
+    }
     &:hover,&:focus{
        opacity: 1;
         box-shadow:none;

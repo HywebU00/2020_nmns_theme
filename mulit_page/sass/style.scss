@@ -82,12 +82,497 @@
     }
     // _element.scss
     .scrollToTop {
-        background: url(../images/basic/top.png) no-repeat center top nth($lightColor, $style);
+        background: url(../images/basic/top.png) no-repeat center top nth($primaryColor, $style);
+        @include screen('notebook'){
+            background: url(../images/basic/top.png) no-repeat center top nth($lightColor, $style);
+        }
     }
     // _footer.scss
     footer {
         .background_block {
             background-color: nth($primaryColor, $style);
+        }
+    }
+    // _sp.scss
+    h3 {
+        color: nth($primaryColor, $style);
+        &:before {
+            border: 8px solid nth($primaryColor, $style);
+            border-color: transparent transparent transparent nth($primaryColor, $style);
+        }
+    }
+    h4 {
+        color: nth($lightColor, $style);
+    }
+    // _table.scss
+    table {
+        th {
+            background-color: nth($primaryColor, $style);
+        }
+    }
+    .table_list {
+        @include screen('mobile') {
+            td {
+                &:before {
+                    background-color: nth($primaryColor, $style);
+                }
+            }
+        }
+        @media(max-width: 480px) {
+            td {
+                &:before {
+                    color: nth($primaryColor, $style);
+                }
+            }
+        }
+    }
+    .activity_Tb {
+        th {
+            &:after {
+                background-color: nth($primaryColor, $style);
+            }
+        }
+    }
+    // _form.scss
+    input[type="submit"] {
+        @include btn_setting(nth($lightColor, $style), #FFF);
+    }
+    // _btn.scss
+    .btn-submit {
+        @include btn_setting(lighten(nth($lightColor, $style), 5), #FFF);
+    }
+    // _function.css
+    div.function {
+        ul {
+            li {
+                a {
+                    &:hover,
+                    &:focus {
+                        background: nth($primaryColor, $style);
+                        border-color: nth($primaryColor, $style);
+                    }
+                }
+            }
+        }
+    }
+}
+// 版型03
+.version03 {
+    $style: index($sites, version03);
+    // _template.scss
+    .wrapper {
+        background-color: nth($secondaryColor, $style);
+    }
+    .main {
+        h1 {
+            a {
+                color: nth($primaryColor, $style);
+            }
+        }
+    }
+    // _header.scss
+    .header {
+        @include screen('mobile') {
+            background-color: nth($primaryColor, $style);
+        }
+    }
+    // _menu.scss
+    .menu {
+        >ul {
+            >li {
+                >a {
+                    &:before {
+                        background-color: nth($primaryColor, $style);
+                    }
+                    &:hover, &:focus {
+                        color: nth($primaryColor, $style);
+                    }
+                }
+            }
+        }
+    }
+    .sidebar {
+        .m_area {
+            &:before {
+                background: nth($primaryColor, $style);
+            }
+            background:nth($primaryColor, $style);
+            .menu {
+                li {
+                    >a {
+                        &:before {
+                            background-color: nth($secondaryColor, $style);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // _breadcrumb.scss
+    .breadcrumb {
+        &:before {
+            background-color: nth($lightColor, $style);
+        }
+    }
+    // _cp.scss
+    h1.title, h2.title {
+        &:before {
+            background-color: nth($lightColor, $style);
+        }
+    }
+    // _element.scss
+    .scrollToTop {
+        background: url(../images/basic/top.png) no-repeat center top nth($primaryColor, $style);
+        @include screen('notebook'){
+            background: url(../images/basic/top.png) no-repeat center top nth($lightColor, $style);
+        }
+    }
+    // _footer.scss
+    footer {
+        .background_block {
+            background-color: nth($primaryColor, $style);
+        }
+    }
+    // _sp.scss
+    h3 {
+        color: nth($primaryColor, $style);
+        &:before {
+            border: 8px solid nth($primaryColor, $style);
+            border-color: transparent transparent transparent nth($primaryColor, $style);
+        }
+    }
+    h4 {
+        color: nth($lightColor, $style);
+    }
+    // _table.scss
+    table {
+        th {
+            background-color: nth($primaryColor, $style);
+        }
+    }
+    .table_list {
+        @include screen('mobile') {
+            td {
+                &:before {
+                    background-color: nth($primaryColor, $style);
+                }
+            }
+        }
+        @media(max-width: 480px) {
+            td {
+                &:before {
+                    color: nth($primaryColor, $style);
+                }
+            }
+        }
+    }
+    .activity_Tb {
+        th {
+            &:after {
+                background-color: nth($primaryColor, $style);
+            }
+        }
+    }
+    // _form.scss
+    input[type="submit"] {
+        @include btn_setting(nth($lightColor, $style), #FFF);
+    }
+    // _btn.scss
+    .btn-submit {
+        @include btn_setting(lighten(nth($lightColor, $style), 5), #FFF);
+    }
+    // _function.css
+    div.function {
+        ul {
+            li {
+                a {
+                    &:hover,
+                    &:focus {
+                        background: nth($primaryColor, $style);
+                        border-color: nth($primaryColor, $style);
+                    }
+                }
+            }
+        }
+    }
+}
+// 版型04
+.version04 {
+    $style: index($sites, version04);
+    // _template.scss
+    .wrapper {
+        background-color: nth($secondaryColor, $style);
+    }
+    .main {
+        h1 {
+            a {
+                color: nth($primaryColor, $style);
+            }
+        }
+    }
+    // _header.scss
+    .header {
+        @include screen('mobile') {
+            background-color: nth($primaryColor, $style);
+        }
+    }
+    // _menu.scss
+    .menu {
+        >ul {
+            >li {
+                >a {
+                    &:before {
+                        background-color: nth($primaryColor, $style);
+                    }
+                    &:hover, &:focus {
+                        color: nth($primaryColor, $style);
+                    }
+                }
+            }
+        }
+    }
+    .sidebar {
+        .m_area {
+            &:before {
+                background: nth($primaryColor, $style);
+            }
+            background:nth($primaryColor, $style);
+            .menu {
+                li {
+                    >a {
+                        &:before {
+                            background-color: nth($secondaryColor, $style);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // _breadcrumb.scss
+    .breadcrumb {
+        &:before {
+            background-color: nth($lightColor, $style);
+        }
+    }
+    // _cp.scss
+    h1.title, h2.title {
+        &:before {
+            background-color: nth($lightColor, $style);
+        }
+    }
+    // _element.scss
+    .scrollToTop {
+        background: url(../images/basic/top.png) no-repeat center top nth($primaryColor, $style);
+        @include screen('notebook'){
+            background: url(../images/basic/top.png) no-repeat center top nth($lightColor, $style);
+        }
+    }
+    // _footer.scss
+    footer {
+        .background_block {
+            background-color: nth($primaryColor, $style);
+        }
+    }
+    // _sp.scss
+    h3 {
+        color: nth($primaryColor, $style);
+        &:before {
+            border: 8px solid nth($primaryColor, $style);
+            border-color: transparent transparent transparent nth($primaryColor, $style);
+        }
+    }
+    h4 {
+        color: nth($lightColor, $style);
+    }
+    // _table.scss
+    table {
+        th {
+            background-color: nth($primaryColor, $style);
+        }
+    }
+    .table_list {
+        @include screen('mobile') {
+            td {
+                &:before {
+                    background-color: nth($primaryColor, $style);
+                }
+            }
+        }
+        @media(max-width: 480px) {
+            td {
+                &:before {
+                    color: nth($primaryColor, $style);
+                }
+            }
+        }
+    }
+    .activity_Tb {
+        th {
+            &:after {
+                background-color: nth($primaryColor, $style);
+            }
+        }
+    }
+    // _form.scss
+    input[type="submit"] {
+        @include btn_setting(nth($lightColor, $style), #FFF);
+    }
+    // _btn.scss
+    .btn-submit {
+        @include btn_setting(lighten(nth($lightColor, $style), 5), #FFF);
+    }
+    // _function.css
+    div.function {
+        ul {
+            li {
+                a {
+                    &:hover,
+                    &:focus {
+                        background: nth($primaryColor, $style);
+                        border-color: nth($primaryColor, $style);
+                    }
+                }
+            }
+        }
+    }
+}
+// 版型05
+.version05 {
+    $style: index($sites, version05);
+    // _template.scss
+    .wrapper {
+        background-color: nth($secondaryColor, $style);
+    }
+    .main {
+        h1 {
+            a {
+                color: nth($primaryColor, $style);
+            }
+        }
+    }
+    // _header.scss
+    .header {
+        @include screen('mobile') {
+            background-color: nth($primaryColor, $style);
+        }
+    }
+    // _menu.scss
+    .menu {
+        >ul {
+            >li {
+                >a {
+                    &:before {
+                        background-color: nth($primaryColor, $style);
+                    }
+                    &:hover, &:focus {
+                        color: nth($primaryColor, $style);
+                    }
+                }
+            }
+        }
+    }
+    .sidebar {
+        .m_area {
+            &:before {
+                background: nth($primaryColor, $style);
+            }
+            background:nth($primaryColor, $style);
+            .menu {
+                li {
+                    >a {
+                        &:before {
+                            background-color: nth($secondaryColor, $style);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // _breadcrumb.scss
+    .breadcrumb {
+        &:before {
+            background-color: nth($lightColor, $style);
+        }
+    }
+    // _cp.scss
+    h1.title, h2.title {
+        &:before {
+            background-color: nth($lightColor, $style);
+        }
+    }
+    // _element.scss
+    .scrollToTop {
+        background: url(../images/basic/top.png) no-repeat center top nth($primaryColor, $style);
+        @include screen('notebook'){
+            background: url(../images/basic/top.png) no-repeat center top nth($lightColor, $style);
+        }
+    }
+    // _footer.scss
+    footer {
+        .background_block {
+            background-color: nth($primaryColor, $style);
+        }
+    }
+    // _sp.scss
+    h3 {
+        color: nth($primaryColor, $style);
+        &:before {
+            border: 8px solid nth($primaryColor, $style);
+            border-color: transparent transparent transparent nth($primaryColor, $style);
+        }
+    }
+    h4 {
+        color: nth($lightColor, $style);
+    }
+    // _table.scss
+    table {
+        th {
+            background-color: nth($primaryColor, $style);
+        }
+    }
+    .table_list {
+        @include screen('mobile') {
+            td {
+                &:before {
+                    background-color: nth($primaryColor, $style);
+                }
+            }
+        }
+        @media(max-width: 480px) {
+            td {
+                &:before {
+                    color: nth($primaryColor, $style);
+                }
+            }
+        }
+    }
+    .activity_Tb {
+        th {
+            &:after {
+                background-color: nth($primaryColor, $style);
+            }
+        }
+    }
+    // _form.scss
+    input[type="submit"] {
+        @include btn_setting(nth($lightColor, $style), #FFF);
+    }
+    // _btn.scss
+    .btn-submit {
+        @include btn_setting(lighten(nth($lightColor, $style), 5), #FFF);
+    }
+    // _function.css
+    div.function {
+        ul {
+            li {
+                a {
+                    &:hover,
+                    &:focus {
+                        background: nth($primaryColor, $style);
+                        border-color: nth($primaryColor, $style);
+                    }
+                }
+            }
         }
     }
 }
