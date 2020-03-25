@@ -33,14 +33,14 @@ $(function() {
                 slidesToScroll: 1,
                 arrows: true
             }
-        },{
+        }, {
             breakpoint: 768,
             settings: {
                 slidesToShow: 4,
                 slidesToScroll: 1,
                 arrows: true
             }
-        },{
+        }, {
             breakpoint: 575,
             settings: {
                 slidesToShow: 3,
@@ -96,7 +96,7 @@ $(function() {
         ease: 'ease',
         lazy: true
     });
-     // cp_photo
+    // cp_photo
     $('.Slider-for').on('init reInit afterChange', function(event, slick, currentSlide) {
         var i = (currentSlide ? currentSlide : 0) + 1;
         $('.controls').html(i + '/' + slick.slideCount);
@@ -122,22 +122,30 @@ $(function() {
         focusOnSelect: true,
         infinite: true
     });
-
     //我要報名 開會員登入
-    $('.signupbtn').click(function(){
+    $('.signupbtn').click(function() {
         $('.member_login').slideToggle();
     })
-    
 });
 // 手機版h1固定
 $(function() {
     $(window).scroll(function() {
-        if ($(this).scrollTop() >120) { /* 要滑動到選單的距離 */
+        if ($(this).scrollTop() > 120) { /* 要滑動到選單的距離 */
             $('.main h1>a').addClass('h1afixed'); /* 幫選單加上固定效果 */
-           
         } else {
             $('.main h1>a').removeClass('h1afixed'); /* 移除選單固定效果 */
-           
+        }
+    });
+});
+// menu固定
+$(function() {
+    $(window).scroll(function() {
+        if ($('.menu_vertical').length == 0) {
+            if ($(this).scrollTop() > 300) { /* 要滑動到選單的距離 */
+                $('.header .menu').addClass('menufixed'); /* 幫選單加上固定效果 */
+            } else {
+                $('.header .menu').removeClass('menufixed'); /* 移除選單固定效果 */
+            }
         }
     });
 });
