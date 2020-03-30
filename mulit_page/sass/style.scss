@@ -126,7 +126,7 @@
             }
         }
     }
-    .activity_Tb {
+    .activity_Tb, .memberTb {
         th {
             &:after {
                 background-color: nth($primaryColor, $style);
@@ -266,7 +266,7 @@
             }
         }
     }
-    .activity_Tb {
+    .activity_Tb, .memberTb {
         th {
             &:after {
                 background-color: nth($primaryColor, $style);
@@ -406,7 +406,7 @@
             }
         }
     }
-    .activity_Tb {
+    .activity_Tb, .memberTb {
         th {
             &:after {
                 background-color: nth($primaryColor, $style);
@@ -546,7 +546,7 @@
             }
         }
     }
-    .activity_Tb {
+    .activity_Tb, .memberTb {
         th {
             &:after {
                 background-color: nth($primaryColor, $style);
