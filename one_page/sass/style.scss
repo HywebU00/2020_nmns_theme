@@ -27,11 +27,17 @@ a {
     }
     // mp.scss
     .themepic_block {
-        // &:before {
-        //     background-image: url('../images/themepicbg02.jpg');
-        //     background-color: #306d7e;
-        // }
-       
+        &:before {
+            background-image: url('../images/themepicbg02.jpg');
+            background-repeat: repeat-x;
+            background-position: 0 0;
+            background-color: #306d7e;
+        }
+        .themepic {
+            &:before, &:after {
+                display: none;
+            }
+        }
     }
     .theme_dat_block {
         .back_signup {
@@ -174,10 +180,20 @@ a {
     }
     // mp.scss
     .themepic_block {
-        // &:before {
-        //     background-image: url('../images/themepicbg03.jpg');
-        //     background-color: #393938;
-        // }
+        &:before {
+            // background-image: url('../images/themepicbg03.jpg');
+            background-color: #7a7b68;
+        }
+        .themepic {
+            &:before {
+                background: linear-gradient(90deg, rgba(122, 123, 104, 1) 0%, rgba(122, 123, 104, 1) 20%, rgba(122, 123, 104, 0) 100%);
+                position: absolute;
+            }
+            &:after {
+                background: linear-gradient(90deg, rgba(122, 123, 104, 0) 0%, rgba(122, 123, 104, 1) 80%, rgba(122, 123, 104, 1) 100%);
+                position: absolute;
+            }
+        }
     }
     .theme_dat_block {
         .back_signup {
@@ -320,10 +336,20 @@ a {
     }
     // mp.scss
     .themepic_block {
-        // &:before {
-        //     background-image: url('../images/themepicbg04.jpg');
-        //     background-color: #393938;
-        // }
+        &:before {
+            // background-image: url('../images/themepicbg03.jpg');
+            background-color: #636d74;
+        }
+        .themepic {
+            &:before {
+                background: linear-gradient(90deg, rgba(99, 109, 116, 1) 0%, rgba(99, 109, 116, 1) 20%, rgba(99, 109, 116, 0) 100%);
+                position: absolute;
+            }
+            &:after {
+                background: linear-gradient(90deg, rgba(99, 109, 116, 0) 0%, rgba(99, 109, 116, 1) 80%, rgba(99, 109, 116, 1) 100%);
+                position: absolute;
+            }
+        }
     }
     .theme_dat_block {
         .back_signup {
@@ -466,10 +492,20 @@ a {
     }
     // mp.scss
     .themepic_block {
-        // &:before {
-        //     background-image: url('../images/themepicbg05.jpg');
-        //     background-color: #393938;
-        // }
+        &:before {
+            // background-image: url('../images/themepicbg03.jpg');
+            background-color: #337f9a;
+        }
+        .themepic {
+            &:before {
+                background: linear-gradient(90deg, rgba(51, 127, 154, 1) 0%, rgba(51, 127, 154, 1) 20%, rgba(51, 127, 154, 0) 100%);
+                position: absolute;
+            }
+            &:after {
+                background: linear-gradient(90deg, rgba(51, 127, 154, 0) 0%, rgba(51, 127, 154, 1) 80%, rgba(51, 127, 154, 1) 100%);
+                position: absolute;
+            }
+        }
     }
     .theme_dat_block {
         .back_signup {

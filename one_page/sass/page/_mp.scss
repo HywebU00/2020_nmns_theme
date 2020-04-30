@@ -75,8 +75,8 @@ a[href*="http"] {
         // background-repeat: repeat-x;
         // background-position: 0 0;
         // background-color: #383838;
-        // background-color: #626262;
-        background-color: #c9c9c9;
+        
+        background-color: #a0a0a0;
         width: 100%;
         position: absolute;
         top: 0;
@@ -98,7 +98,7 @@ a[href*="http"] {
             content:'';
             width:300px; 
             height: 100%;
-            background: linear-gradient(90deg, rgba(201,201,201,1) 0%, rgba(201,201,201,1) 20%, rgba(201,201,201,0) 100%);
+            background: linear-gradient(90deg, rgba(160,160,160,1) 0%, rgba(160,160,160,1) 20%, rgba(160,160,160,0) 100%);
             position: absolute;
             left:0;
             top:0;
@@ -107,7 +107,7 @@ a[href*="http"] {
             content:'';
             width:300px;
             height: 100%;
-            background: linear-gradient(90deg, rgba(201,201,201,0) 0%, rgba(201,201,201,1) 80%, rgba(201,201,201,1) 100%);
+            background: linear-gradient(90deg, rgba(160,160,160,0) 0%, rgba(160,160,160,1) 80%, rgba(160,160,160,1) 100%);
             position: absolute;
             right:0;
             top:0;
