@@ -72,10 +72,10 @@ a {
         th {
             background-color: nth($secondaryColor, $style);
         }
-        thead {
-            border-right: nth($secondaryColor, $style) 8px solid;
-            border-left: nth($secondaryColor, $style) 8px solid;
-        }
+        // thead {
+        //     border-right: nth($secondaryColor, $style) 8px solid;
+        //     border-left: nth($secondaryColor, $style) 8px solid;
+        // }
     }
     .table_list {
         @include screen('mobile') {
@@ -94,22 +94,22 @@ a {
                 }
             }
         }
-        @media(max-width: 480px) {
-            table {
-                &.style2 {
-                    td {
-                        &:before {
-                            color: nth($primaryColor, $style);
-                        }
-                    }
-                }
-            }
-            td {
-                &:before {
-                    color: nth($secondaryColor, $style);
-                }
-            }
-        }
+        // @media(max-width: 480px) {
+        //     table {
+        //         &.style2 {
+        //             td {
+        //                 &:before {
+        //                     color: nth($primaryColor, $style);
+        //                 }
+        //             }
+        //         }
+        //     }
+        //     td {
+        //         &:before {
+        //             color: nth($secondaryColor, $style);
+        //         }
+        //     }
+        // }
     }
     .table_list_fixed_thleft {
         table {
@@ -228,10 +228,10 @@ a {
         th {
             background-color: nth($secondaryColor, $style);
         }
-        thead {
-            border-right: nth($secondaryColor, $style) 8px solid;
-            border-left: nth($secondaryColor, $style) 8px solid;
-        }
+        // thead {
+        //     border-right: nth($secondaryColor, $style) 8px solid;
+        //     border-left: nth($secondaryColor, $style) 8px solid;
+        // }
     }
     .table_list {
         @include screen('mobile') {
@@ -250,22 +250,22 @@ a {
                 }
             }
         }
-        @media(max-width: 480px) {
-            table {
-                &.style2 {
-                    td {
-                        &:before {
-                            color: nth($primaryColor, $style);
-                        }
-                    }
-                }
-            }
-            td {
-                &:before {
-                    color: nth($secondaryColor, $style);
-                }
-            }
-        }
+        // @media(max-width: 480px) {
+        //     table {
+        //         &.style2 {
+        //             td {
+        //                 &:before {
+        //                     color: nth($primaryColor, $style);
+        //                 }
+        //             }
+        //         }
+        //     }
+        //     td {
+        //         &:before {
+        //             color: nth($secondaryColor, $style);
+        //         }
+        //     }
+        // }
     }
     .table_list_fixed_thleft {
         table {
@@ -384,10 +384,10 @@ a {
         th {
             background-color: nth($secondaryColor, $style);
         }
-        thead {
-            border-right: nth($secondaryColor, $style) 8px solid;
-            border-left: nth($secondaryColor, $style) 8px solid;
-        }
+        // thead {
+        //     border-right: nth($secondaryColor, $style) 8px solid;
+        //     border-left: nth($secondaryColor, $style) 8px solid;
+        // }
     }
     .table_list {
         @include screen('mobile') {
@@ -406,22 +406,22 @@ a {
                 }
             }
         }
-        @media(max-width: 480px) {
-            table {
-                &.style2 {
-                    td {
-                        &:before {
-                            color: nth($primaryColor, $style);
-                        }
-                    }
-                }
-            }
-            td {
-                &:before {
-                    color: nth($secondaryColor, $style);
-                }
-            }
-        }
+        // @media(max-width: 480px) {
+        //     table {
+        //         &.style2 {
+        //             td {
+        //                 &:before {
+        //                     color: nth($primaryColor, $style);
+        //                 }
+        //             }
+        //         }
+        //     }
+        //     td {
+        //         &:before {
+        //             color: nth($secondaryColor, $style);
+        //         }
+        //     }
+        // }
     }
     .table_list_fixed_thleft {
         table {
@@ -540,10 +540,10 @@ a {
         th {
             background-color: nth($secondaryColor, $style);
         }
-        thead {
-            border-right: nth($secondaryColor, $style) 8px solid;
-            border-left: nth($secondaryColor, $style) 8px solid;
-        }
+        // thead {
+        //     border-right: nth($secondaryColor, $style) 8px solid;
+        //     border-left: nth($secondaryColor, $style) 8px solid;
+        // }
     }
     .table_list {
         @include screen('mobile') {
@@ -562,22 +562,22 @@ a {
                 }
             }
         }
-        @media(max-width: 480px) {
-            table {
-                &.style2 {
-                    td {
-                        &:before {
-                            color: nth($primaryColor, $style);
-                        }
-                    }
-                }
-            }
-            td {
-                &:before {
-                    color: nth($secondaryColor, $style);
-                }
-            }
-        }
+        // @media(max-width: 480px) {
+        //     table {
+        //         &.style2 {
+        //             td {
+        //                 &:before {
+        //                     color: nth($primaryColor, $style);
+        //                 }
+        //             }
+        //         }
+        //     }
+        //     td {
+        //         &:before {
+        //             color: nth($secondaryColor, $style);
+        //         }
+        //     }
+        // }
     }
     .table_list_fixed_thleft {
         table {

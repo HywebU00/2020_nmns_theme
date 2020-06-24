@@ -164,6 +164,9 @@ a[href*="http"] {
     }
     .container {
         padding: 0 25px;
+         @include screen('mobile'){
+            padding: 0 15px;
+         }
     }
     // 回個人報名首頁
     .back_signup {
@@ -230,9 +233,9 @@ a[href*="http"] {
             }
             @include screen('mobile') {
                 width: 90%;
-                margin: 0 20px;
+                margin: 0 20px 0 10px;
                 +ul {
-                    margin: 0 20px;
+                    margin: 0 20px 0 10px;
                 }
             }
             li {
@@ -308,11 +311,12 @@ p {
     .container {
         padding: 0 60px !important;
         @include screen('mobile') {
-            padding: 0 40px !important;
-        }
-        @media(max-width: 480px) {
             padding: 0 25px !important;
         }
+        @media(max-width: 480px) {
+            padding: 0 15px !important;
+        }
+        
     }
 }
 // 活動內容
@@ -335,10 +339,10 @@ p {
         padding: 0 60px !important;
         position: relative;
         @include screen('mobile') {
-            padding: 0 40px !important;
+            padding: 0 25px !important;
         }
         @media(max-width: 480px) {
-            padding: 0 25px !important;
+            padding: 0 15px !important;
         }
     }
     .content {
@@ -387,10 +391,10 @@ p {
         position: relative;
         padding: 0 60px !important;
         @include screen('mobile') {
-            padding: 0 40px !important;
+            padding: 0 25px !important;
         }
         @media(max-width: 480px) {
-            padding: 0 25px !important;
+            padding: 0 15px !important;
         }
     }
     .content {
@@ -426,10 +430,10 @@ p {
     .container {
         padding: 0 60px !important;
         @include screen('mobile') {
-            padding: 0 50px !important;
+            padding: 0 25px !important;
         }
         @media(max-width: 480px) {
-            padding: 0 25px !important;
+            padding: 0 15px !important;
         }
     }
     .content {
@@ -480,10 +484,10 @@ p {
     .container {
         padding: 0 60px !important;
         @include screen('mobile') {
-            padding: 0 50px !important;
+            padding: 0 25px !important;
         }
         @media(max-width: 480px) {
-            padding: 0 25px !important;
+            padding: 0 15px !important;
         }
     }
     h2 {
