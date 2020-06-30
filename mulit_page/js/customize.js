@@ -149,3 +149,10 @@ $(function() {
         }
     });
 });
+
+// 我要報名
+$(function(){
+     $('.signupbtn').click(function() {
+        $('body,html').stop(true, true).animate({ scrollTop: $('.member_login').offset().top }, 0, 'easeOutExpo');
+    });
+})
