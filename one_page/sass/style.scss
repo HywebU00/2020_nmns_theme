@@ -28,17 +28,28 @@ a {
     // mp.scss
     .themepic_block {
         &:before {
-            background-image: url('../images/themepicbg02.jpg');
-            background-repeat: repeat-x;
-            background-position: 0 0;
-            background-color: transparent;
+             background-color: #80b0be;
+            // background-image: url('../images/themepicbg02.jpg');
+            // background-repeat: repeat-x;
+            // background-position: 0 0;
+            // background-color: transparent;
         }
         .themepic {
-            &:before, &:after {
-                display: none;
+            &:before {
+                background: linear-gradient(90deg, rgba(128, 176, 190, 1) 0%, rgba(128, 176, 190, 1) 20%, rgba(128, 176, 190, 0) 100%);
+                position: absolute;
+            }
+            &:after {
+                background: linear-gradient(90deg, rgba(128, 176, 190, 0) 0%, rgba(128, 176, 190, 1) 80%, rgba(128, 176, 190, 1) 100%);
+                position: absolute;
             }
         }
     }
+
+
+
+
+
     .theme_dat_block {
         .back_signup {
             a {
@@ -481,7 +492,7 @@ a {
         }
     }
 }
-// 版型04
+// 版型05
 .version05 {
     $style: index($sites, version05);
     a {
