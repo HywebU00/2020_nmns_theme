@@ -434,7 +434,7 @@ table {
         border: #c9c9c9 1px solid;
         margin-bottom: 10px;
         th {
-            width: 100px;
+            width: 95px;
             border: #c9c9c9 1px solid;
             background-color: #fff;
         }
@@ -458,6 +458,7 @@ table {
     table {
         th {
             background-color: nth($primaryColor, $style);
+            width: 100px!important;
         }
     }
 }

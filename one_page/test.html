@@ -1,0 +1,565 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh-Hant" class="no-js" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="urn:user-namespace-here">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>國立自然科學博物館 主題網</title>
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/hyui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="images/favicon.png" rel="icon" type="image/x-icon">
+    <script type="text/javascript" src="../../../js/setcnt.js"></script>
+</head>
+
+<body class="version01" onload="
+          setcnt('824');setblock();
+        "><a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container"><a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+                <h1><a href="#">2020.6.21日環食教師研習</a></h1>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#10">活動介紹</a></li>
+                        <li><a href="#20">活動內容</a></li>
+                        <li><a href="#30">報名/繳費方式</a></li>
+                        <li><a href="#60">檔案下載</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="center" class="main"><a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
+            <section class="demosection col-12 themepic_block">
+                <div class="container">
+                    <div class="col">
+                        <div class="themepic"><img src="images/themepic01.jpg"></div>
+                    </div>
+                </div>
+            </section><a name="40"></a>
+            <section class="demosection col-12 theme_dat_block">
+                <div class="container">
+                    <div class="col">
+                        <div class="back_signup"><a href="../../../mp.asp?mp=3">回個人報名首頁</a></div>
+                        <div class="theme_dat">
+                            <ul class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s">
+                                <li><span><img src="images/theme_data_icon01.png" alt="" />活動對象：</span>教師 </li>
+                                <li><span><img src="images/theme_data_icon05.png" alt="" />活動日期：</span> 2016/6/18；2016/6/19</li>
+                            </ul>
+                            <ul class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s">
+                                <li><span><img src="images/theme_data_icon06.png" alt="" />活動費用：</span>每梯次80人，每人新臺幣0元</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="demosection col-12 signup_block s_4">
+                <div class="container">
+                    <div class="col">
+                        <!-- 我要報名start -->
+                        <h2 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".6s"><span><img src="images/h2_icon01.png" alt="" /></span>我要報名</h2>
+                        <div class="table_list">
+                            <table summary="">
+                                <thead>
+                                    <tr>
+                                        <th>活動名稱</th>
+                                        <th>活動日期</th>
+                                        <th>報名狀態</th>
+                                        <th>登錄人數</th>
+                                        <th>登錄名單</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>「日環食」觀測</td>
+                                        <td>2020/6/7(日) 9:30~12:00</td>
+                                        <td>已截止 </td>
+                                        <td class="aCenter">80</td>
+                                        <td>
+                                            <button type="button" class="btn btn-gray" onclick="opennamelist('5500','「日環食」觀測','2020/6/7','1');">登錄名單</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="altrow">
+                                        <td></td>
+                                        <td>2020/6/7(日) 14:00~16:30</td>
+                                        <td>已截止 </td>
+                                        <td class="aCenter">80</td>
+                                        <td>
+                                            <button type="button" class="btn btn-gray" onclick="opennamelist('5501','「日環食」觀測','2020/6/7','1');">登錄名單</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--燈箱1 start-->
+            <div id="modal1" class="modal">
+                <h2>會員登入</h2>
+                <div class="content">
+                    <h3>貼心小提醒：</h3>
+                    <p>科教活動個人報名系統已正式納入單一登入服務，108/9/30前已在本系統註冊過的學員，仍需先加入「科博館會員」，之後用科博館會員帳密登入即可快速報名/查詢個人報名系統的科教活動</p>
+                    <p class="word_red">108/9/30前已成功報名/繳費的學員仍保有原先狀態，不受任何影響。</p>
+                    <button type="button" class="btn" onclick="member_login2();">會員單一登入</button>
+                    <script language="JavaScript" type="text/JavaScript"> function member_login2()
+	{	
+      document.location.href='../../../cas/demo.asp?flag=1&actId=824';
+	}
+
+	</script>
+                </div>
+            </div>
+            <!--燈箱1 end-->
+            <!--燈箱2 start-->
+            <div id="modal2" class="modal2">
+                <h2>我要報名</h2>
+                <div class="content">
+                    <p>這是您剛才所選活動的詳細內容，請詳閱清楚。如確定這就是您要報名的活動，請按『登錄報名』進行報名，若想報名其他活動則請按『取消』</p>
+                    <div class="memberTb">
+                        <div class="member">
+                            <!--steps-->
+                            <!--報名處理開始-->
+                            <FORM id=reg method=post name=reg action=""><INPUT value=1 id=actAdminWay type=hidden name=htx_actAdminWay> <INPUT value=1 id=actAAMode type=hidden name=htx_actAAMode><INPUT value=0 id=actSetNum type=hidden name=htx_actSetNum>
+                                <H3>請確認您的報名活動資料</H3>
+                                <DIV class=memberTb>
+                                    <TABLE summary=活動資料表格>
+                                        <TBODY>
+                                            <TR>
+                                                <TH width="20%" scope=row>活動名稱：</TH>
+                                                <TD width="80%"><INPUT value=824 id=actId type=hidden name=htx_actId><span id="actTitle">2020.6.21日環食教師研習</span> -- <INPUT value=1454 id=actTId type=hidden name=htx_actTId><span id="actItemName">「日環食」觀測</span></TD>
+                                            </TR>
+                                            <TR>
+                                                <TH scope=row>活動時間：</TH>
+                                                <TD><INPUT value=5500 id=actDId type=hidden name=htx_actDId><span id="actDTitle"> </span> <span id="actPeriod">2020/6/7(日) 9:30~12:00</span></TD>
+                                            </TR>
+                                            <TR>
+                                                <TH scope=row>費用：</TH>
+                                                <TD><span id="actPayment">0</span></TD>
+                                            </TR>
+                                            <TR>
+                                                <TH scope=row>活動對象：</TH>
+                                                <TD><span id="actAge">教師</span></TD>
+                                            </TR>
+                                            <TR>
+                                                <TH scope=row>活動內容：</TH>
+                                                <TD><span id="actContent">依循108課綱自然學科「探究與實作」素養課程精神，推廣正確的日食觀測技巧，增進教師對特殊天象認知瞭解</span></TD>
+                                            </TR>
+                                        </TBODY>
+                                    </TABLE>
+                                </DIV>
+                                <H3>請確認您的基本資料</H3>
+                                <DIV class=memberTb>
+                                    <TABLE summary=個人資料表格>
+                                        <TBODY>
+                                            <TR>
+                                                <TH scop="row">身份證字號：</TH>
+                                                <TD width="80%">A111111111</TD>
+                                            </TR>
+                                            <TR>
+                                                <TH width="20%" scop="row">姓名：</TH>
+                                                <TD width="80%">TEST</TD>
+                                            </TR>
+                                            <TR>
+                                                <TH scop="row">出生年月日：</TH>
+                                                <TD>2008/9/1</TD>
+                                            </TR>
+                                            </TR>
+                                        </TBODY>
+                                    </TABLE>
+                                </DIV>
+                                <DIV class=btn_center><INPUT class=btn_submit onclick="javascript:return Submit_Check();" value=登錄報名 type=button name=submitbutton> <INPUT class=btn_reset onclick=backapply(); value=取消 type=button name=submitbutton> </DIV>
+                            </FORM>
+                            <script language="JavaScript" type="text/JavaScript"> function blen(xs) {			//檢測中英文夾雜字串實際長度
+	var xl = xs.length;
+	for(i=0; i<xl; i++) {
+		var intcode = xs.charCodeAt(i); 
+		if(intcode > 255 || intcode < 0) xl += 1;
+	}
+	return xl;
+}
+function date(){
+	var d = new Date();
+	return [d.getFullYear(), d.getMonth() > 8 ? d.getMonth() + 1 : '0' + (d.getMonth() + 1), d.getDate() > 9 ? d.getDate() : '0' + d.getDate()].join('/');
+}
+
+		
+		function backapply()
+		{
+		 document.location.href="actapply.asp?actId=824";
+		}
+		
+
+		function Submit_Check()
+		{	
+		
+		document.reg.submitbutton.disabled = (document.reg.submitbutton.disabled == "" ? "disabled" : "");
+	nMsg = "請務必填寫「{0}」，不得為空白！";
+	lMsg = "「{0}」欄位長度最多為{1}！";
+	dMsg = "「{0}」欄位應為 yyyy/mm/dd ！";
+	iMsg = "「{0}」欄位應為數值！";
+	pMsg = "「{0}」欄位圖檔類型必須為 " + String.fromCharCode(34) + "GIF,JPG,JPEG" + String.fromCharCode(34) + " 其中一種！";
+  	
+			
+	xData = "<activity-package>";
+	xData += "<member_id>A111111111</member_id>";
+	xData += "<actAdminWay>"+document.reg.htx_actAdminWay.value+"</actAdminWay>";
+	xData += "<actId>"+document.reg.htx_actId.value+"</actId>";
+	xData += "<actTId>"+document.getElementById("actTId").value+"</actTId>";
+	xData += "<actDId>"+document.getElementById("actDId").value+"</actDId>";
+	xData += "<actSetNum>"+document.reg.htx_actSetNum.value+"</actSetNum>";
+	
+	xData += "</activity-package>";
+	
+	var Stamp = new Date();	
+	var url;
+	var html;
+	var event_code;
+	
+	url = "../../../personalcheck.asp";
+	var ajaxEngine = null;
+	ajaxEngine = getAJAXEngine();
+	if(ajaxEngine){
+	  if(document.all){
+		ajaxEngine.onreadystatechange = function(){
+			var result = processRequest(ajaxEngine);
+			if(result){
+			    html = ajaxEngine.responseXML.selectSingleNode("msg/alert").text;
+				event_code = ajaxEngine.responseXML.selectSingleNode("msg/event_code").text;
+				}
+			}
+			sendAJAXPOST(ajaxEngine, url, xData);
+		}else{
+		sendAJAXPOST(ajaxEngine, url, xData);
+		
+         if (ajaxEngine.status == 200) {
+	    html=ajaxEngine.responseText;
+		
+		var parser = new DOMParser(); 
+        var ffoXML = parser.parseFromString(html, "text/xml");
+        html=ffoXML.getElementsByTagName("alert")[0].childNodes[0].nodeValue;
+		event_code=ffoXML.getElementsByTagName("event_code")[0].childNodes[0].nodeValue;
+
+		}
+    }
+  
+	}
+		
+		switch(event_code)
+{
+case "Y":
+    document.reg.action = "../../../actApplyFormSet.asp";
+	document.reg.submit();
+  break;
+case "N":
+case "R":
+  alert(html);
+  
+  break;
+
+}
+}
+
+	</script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--燈箱2 end-->
+            <!--燈箱3 start-->
+            <div id="modal3" class="modal3">
+                <div class="activity_data">
+                    <ul>
+                        <li id="ntitle"></li>
+                        <li id="nperiod"></li>
+                    </ul>
+                </div>
+                <div class="content" ID="NAME">
+                </div>
+            </div>
+            <!--燈箱3 end-->
+            <script language="JavaScript" type="text/JavaScript"> function   openapply(actdid,acttid,actItemName,actDTitle,actPeriod,actPayment,actAge){
+	   document.getElementById("modal2").style= "display:block";
+	  document.getElementById("actTId").value=acttid;
+	  document.getElementById("actItemName").innerHTML=actItemName;
+	  document.getElementById("actDId").value=actdid;
+	  document.getElementById("actDTitle").innerHTML=actDTitle;
+	  document.getElementById("actPeriod").innerHTML=actPeriod;
+	  document.getElementById("actPayment").innerHTML=actPayment;
+	  document.getElementById("actAge").innerHTML=actAge;
+	
+	} 
+	
+     function   opennamelist(actdid,xtitle,xperiod,xtype){
+	  document.getElementById("ntitle").innerHTML="<span>活動名稱：</span>" + xtitle ;
+	  document.getElementById("nperiod").innerHTML="<span>活動日期：</span>" + xperiod;
+	  document.getElementById("modal3").style= "display:block";
+	 		              var xData;
+			              xData = "<activity-package>";
+			              xData += "<id>" + actdid + "</id>";
+			              xData += "</activity-package>";
+			               
+			              var Stamp = new Date();
+			              var url;
+			              var html;
+			              var event_code;
+                if (xtype==1){
+			              url = "../../../namelistONE.asp";
+				}else{
+                          url = "../../../namepublicONE.asp";
+                }				
+			              var ajaxEngine = null;
+			              ajaxEngine = getAJAXEngine();
+			              if (ajaxEngine) {
+			                  if (document.all) {
+			                      ajaxEngine.onreadystatechange = function () {
+			                          var result = processRequest(ajaxEngine);
+			                          if (result) {
+									        html = ajaxEngine.responseText;
+			                              
+			                          }
+			                      }
+			                      sendAJAXPOST(ajaxEngine, url, xData);
+			                  } else {
+			                      sendAJAXPOST(ajaxEngine, url, xData);
+
+			                      if (ajaxEngine.status == 200) {
+
+			                            html = ajaxEngine.responseText;
+
+			                      }
+			                  }
+
+			              }
+						  
+	 document.getElementById("NAME").innerHTML=html;
+	 }
+	 
+	 function getAJAXEngine()
+{
+    var ajaxEngine = false;
+    if (window.XMLHttpRequest) { // Mozilla
+        ajaxEngine = new XMLHttpRequest();
+        if (ajaxEngine.overrideMimeType) {
+            ajaxEngine.overrideMimeType('text/xml');
+        }
+    } else if (window.ActiveXObject) { // IE
+        try {
+                ajaxEngine = new ActiveXObject("Msxml2.XMLHTTP");
+            } 
+        catch (e) {
+                try {
+                    ajaxEngine = new ActiveXObject("Microsoft.XMLHTTP");
+                } 
+                catch (e) {}
+        }
+    }
+    if (!ajaxEngine) {
+        alert('Giving up :( Cannot create an XMLHTTP instance');
+        return false;
+    } 
+    return ajaxEngine;
+}
+
+function processRequest(ajaxEngine)
+{
+    if( ajaxEngine.readyState == 4 )
+    {
+        if( ajaxEngine.status == 200 )
+        {
+            return true;
+        }
+        else
+        {
+            //alert('There was a problem with the http request.');
+            return false;
+        }
+    }
+    else
+    {
+        return false;
+    }
+}
+	function sendAJAXPOST(ajaxEngine, url, data)
+{
+    //async: true  sync: false
+    ajaxEngine.open('POST', url, false);
+	try { ajaxEngine.responseType = 'msxml-document'; } catch(e){}
+
+    ajaxEngine.setRequestHeader("Content-Length",data.length);
+    ajaxEngine.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");  
+    ajaxEngine.send(data);
+}
+
+</script>
+            <a name="10"></a>
+            <section class="demosection col-12 activity_description_block s_2">
+                <div class="container">
+                    <div class="col">
+                        <h2 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s"><span><img src="images/h2_icon03.png" alt=""></span>活動介紹</h2>
+                        <div class="content">
+                            <div class="table_list">
+                                <table summary="">
+                                    <thead>
+                                        <tr>
+                                            <th>活動主題</th>
+                                            <th>學齡限制</th>
+                                            <th>人數及費用</th>
+                                            <th>自備器材</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="aCenter" data-title="活動主題">智能系列－仿生機械</td>
+                                            <td class="aCenter" data-title="學齡限制">國小1年級至4年級</td>
+                                            <td class="aCenter" data-title="人數及費用">每梯次32人，<br>每人新臺幣1,000元</td>
+                                            <td data-title="自備器材">個人隨身用品，如環保筷、水瓶或藥品等。</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="aCenter" data-title="活動主題">智能系列－動物大奇航</td>
+                                            <td class="aCenter" data-title="學齡限制">國小1年級至4年級</td>
+                                            <td class="aCenter" data-title="人數及費用">每梯次32人，<br>每人新臺幣1,000元</td>
+                                            <td data-title="自備器材">個人隨身用品，如環保筷、水瓶或藥品等。</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="aCenter" data-title="活動主題">液壓系列</td>
+                                            <td class="aCenter" data-title="學齡限制">國小3年級至6年級</td>
+                                            <td class="aCenter" data-title="人數及費用">每梯次32人，<br>每人新臺幣1,000元</td>
+                                            <td data-title="自備器材">個人隨身用品，如環保筷、水瓶或藥品等。</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="aCenter" data-title="活動主題">智能系列－古墓奇兵</td>
+                                            <td class="aCenter" data-title="學齡限制">國小4年級至國中2年級</td>
+                                            <td class="aCenter" data-title="人數及費用">每梯次32人，<br>每人新臺幣1,000元</td>
+                                            <td data-title="自備器材">個人隨身用品，如環保筷、水瓶或藥品等。</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="aCenter" data-title="活動主題">智能系列－百戰天龍</td>
+                                            <td class="aCenter" data-title="學齡限制">國小4年級至國中2年級</td>
+                                            <td class="aCenter" data-title="人數及費用">每梯次32人，<br>每人新臺幣1,000元</td>
+                                            <td data-title="自備器材">個人隨身用品，如環保筷、水瓶或藥品等。</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><a name="20"></a>
+            <section class="demosection col-12 activities_block s_1">
+                <div class="container">
+                    <div class="col">
+                        <h2 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s"><span><img src="images/h2_icon02.png" alt=""></span>活動內容</h2>
+                        <div class="content">
+                            <div class="cp">今年6月21日臺灣部份地區可見「日環食」天象，本次「環食帶」將經過金門、澎湖、嘉義及花蓮臺東交界等地。依循108課綱自然學科「探究與實作」素養課程精神，本館積極推廣正確的日食觀測技巧，增進教師對特殊天象認知瞭解，辦理「2020.6.21日環食教師研習」，期能藉由研習教師返校或社區協助推廣方式，引領各地師生和民眾都可踴躍自行辦理進行觀測活動。<br><br>研習對象：各級學校教師<br>研習費用：免費參加<br>研習日期：109年6月7日(日)，上午梯09:30至12:00，下午梯14:00至16:30。<br>研習地點：本館生命科學廳地下樓多用途劇場<br>研習人數：每梯80人，如有未到缺額，活動前10分鐘開放現場報名參加。<br>聯絡電話：04-23226940轉731<div class="scrollX">
+                                    <div class="table_list_thleft">
+                                        <table style="width: 1061.48px;">
+                                            <tbody>
+                                                <tr>
+                                                    <th>時間</th>
+                                                    <td>09:00~09:20</td>
+                                                    <td>09:30~11:00</td>
+                                                    <td>11:00~12:00</td>
+                                                    <td>12:00~</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>內容</th>
+                                                    <td>報到</td>
+                                                    <td>日蝕觀測概要</td>
+                                                    <td>觀測技巧實務操作</td>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>講師</th>
+                                                    <td>&nbsp;</td>
+                                                    <td>孫維新 館長</td>
+                                                    <td>科學教育組 王斌威 助理研究員、黃國斌 助理</td>
+                                                    <td>賦歸</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="table_list_thleft table_list_fixed_thleft">
+                                        <table style="width: 1061.48px;">
+                                            <tbody>
+                                                <tr>
+                                                    <th>時間</th>
+                                                    <td>09:00~09:20</td>
+                                                    <td>09:30~11:00</td>
+                                                    <td>11:00~12:00</td>
+                                                    <td>12:00~</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>內容</th>
+                                                    <td>報到</td>
+                                                    <td>日蝕觀測概要</td>
+                                                    <td>觀測技巧實務操作</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>講師</th>
+                                                    <td></td>
+                                                    <td>孫維新 館長</td>
+                                                    <td>科學教育組 王斌威 助理研究員、黃國斌 助理</td>
+                                                    <td>賦歸</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>採網路報名方式，由本館教育活動個人報名系統進入，請先加入為本館會員後即可報名。已是會員者，請直接登入系統報名，依報名先後順序錄取。<br>
+                                    <h4>注意事項：</h4>
+                                    <ol>
+                                        <li>配合防疫，本館採取實名入場制，參加教師請先於展廳大門外填寫表單，經本館工作人員核對身分資料、量測體溫且無發燒或咳嗽症狀，始可入場。並請務必全程佩戴口罩，以維護健康。</li>
+                                        <li>參與活動教師給予研習時數2.5小時。</li>
+                                        <li>教師研習完畢後，如有意願返回學校或前往社區帶領日食觀測活動，本館會免費提供日食觀測扇及日食相關資料下載，以供運用。但需於推廣教學活動結束後，提供本館有關活動照片及參與人數的簡易說明紀錄報告存參。 </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><a name="30"></a>
+            <section class="demosection col-12 signup_manner_block s_3">
+                <div class="container">
+                    <div class="col">
+                        <h2 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s"><span><img src="images/h2_icon04.png" alt=""></span>報名/繳費方式</h2>
+                        <div class="content"></div>
+                    </div>
+                </div>
+            </section><a name="60"></a>
+            <section class="demosection col-12 attachment_download_block">
+                <div class="container">
+                    <div class="col">
+                        <h2>檔案下載</h2>
+                        <div class="content"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="container"><a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
+                <div class="footer_info">
+                    <p class="Copyright"> 國立自然科學博物館©版權所有</p>
+                    <p> 地址：40453台中市北區館前路一號　<br> 電話：+886-4-23226940</p>
+                </div>
+                <div class="footer_icon"><span class="counter">累計瀏覽人次:<em><span id="cnt"></span></em></span></div>
+            </div>
+        </footer><a href="javascript:;" class="scrollToTop">回頁首</a>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="vendor/jquery.easing.min.js"></script>
+    <script src="vendor/slick/slick.min.js "></script>
+    <script src="vendor/slick/slick-lightbox.js "></script>
+    <script src="vendor/lazyload/lazyload.js"></script>
+    <script src="vendor/picturefill/picturefill.min.js" async="true"></script>
+    <script src="vendor/scrolltable/jquery.scroltable.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    <script src="js/hyui.js"></script>
+    <script src="js/customize.js"></script>
+</body>
+
+</html>
