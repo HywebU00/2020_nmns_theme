@@ -123,9 +123,9 @@ $(function() {
         infinite: true
     });
     //我要報名 開會員登入
-    $('.signupbtn').click(function() {
-        $('.member_login').slideToggle();
-    })
+    // $('.signupbtn').click(function() {
+    //     $('.member_login').slideToggle();
+    // })
 });
 // 手機版h1固定
 $(function() {
@@ -151,8 +151,8 @@ $(function() {
 });
 
 // 我要報名
-$(function(){
-     $('.signupbtn').click(function() {
-        $('body,html').stop(true, true).animate({ scrollTop: $('.member_login').offset().top }, 0, 'easeOutExpo');
-    });
-})
+// $(function(){
+//      $('.signupbtn').click(function() {
+//         $('body,html').stop(true, true).animate({ scrollTop: $('.member_login').offset().top }, 0, 'easeOutExpo');
+//     });
+// })
