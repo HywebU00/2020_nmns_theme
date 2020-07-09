@@ -476,14 +476,13 @@ table {
         }
         @include screen('mobile'){
             td,th{
-                display: block;
-                text-align: left;
+               
+               
             }
             th{
-                color: nth($secondaryColor, $style);
-                background-color: rgba(250, 250, 250, .9)!important;
-                font-size: 1.125em!important;
-                padding:1em 1em 0em !important;
+               width: 30%;
+                padding:.5em !important;
+                vertical-align: top;
             }
         }
     }
