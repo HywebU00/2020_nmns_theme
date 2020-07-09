@@ -83,7 +83,7 @@
     // _element.scss
     .scrollToTop {
         background: url(../images/basic/top.png) no-repeat center top nth($primaryColor, $style);
-        @include screen('notebook'){
+        @include screen('notebook') {
             background: url(../images/basic/top.png) no-repeat center top nth($lightColor, $style);
         }
     }
@@ -153,6 +153,20 @@
                         border-color: nth($primaryColor, $style);
                     }
                 }
+            }
+        }
+    }
+    // 燈箱
+    .modal {
+        h2 {
+            border-bottom: 2px solid nth($primaryColor, $style) !important;
+            padding-bottom: .5em;
+            color: nth($primaryColor, $style) !important;
+        }
+        h3 {
+            &:before {
+                border: 8px solid nth($primaryColor, $style);
+                border-color: transparent transparent transparent nth($primaryColor, $style);
             }
         }
     }
@@ -224,7 +238,7 @@
     // _element.scss
     .scrollToTop {
         background: url(../images/basic/top.png) no-repeat center top nth($primaryColor, $style);
-        @include screen('notebook'){
+        @include screen('notebook') {
             background: url(../images/basic/top.png) no-repeat center top nth($lightColor, $style);
         }
     }
@@ -294,6 +308,20 @@
                         border-color: nth($primaryColor, $style);
                     }
                 }
+            }
+        }
+    }
+    // 燈箱
+    .modal {
+        h2 {
+            border-bottom: 2px solid nth($primaryColor, $style) !important;
+            padding-bottom: .5em;
+            color: nth($primaryColor, $style) !important;
+        }
+        h3 {
+            &:before {
+                border: 8px solid nth($primaryColor, $style);
+                border-color: transparent transparent transparent nth($primaryColor, $style);
             }
         }
     }
@@ -365,7 +393,7 @@
     // _element.scss
     .scrollToTop {
         background: url(../images/basic/top.png) no-repeat center top nth($primaryColor, $style);
-        @include screen('notebook'){
+        @include screen('notebook') {
             background: url(../images/basic/top.png) no-repeat center top nth($lightColor, $style);
         }
     }
@@ -435,6 +463,20 @@
                         border-color: nth($primaryColor, $style);
                     }
                 }
+            }
+        }
+    }
+    // 燈箱
+    .modal {
+        h2 {
+            border-bottom: 2px solid nth($primaryColor, $style) !important;
+            padding-bottom: .5em;
+            color: nth($primaryColor, $style) !important;
+        }
+        h3 {
+            &:before {
+                border: 8px solid nth($primaryColor, $style);
+                border-color: transparent transparent transparent nth($primaryColor, $style);
             }
         }
     }
@@ -506,7 +548,7 @@
     // _element.scss
     .scrollToTop {
         background: url(../images/basic/top.png) no-repeat center top nth($primaryColor, $style);
-        @include screen('notebook'){
+        @include screen('notebook') {
             background: url(../images/basic/top.png) no-repeat center top nth($lightColor, $style);
         }
     }
@@ -576,6 +618,20 @@
                         border-color: nth($primaryColor, $style);
                     }
                 }
+            }
+        }
+    }
+    // 燈箱
+    .modal {
+        h2 {
+            border-bottom: 2px solid nth($primaryColor, $style) !important;
+            padding-bottom: .5em;
+            color: nth($primaryColor, $style) !important;
+        }
+        h3 {
+            &:before {
+                border: 8px solid nth($primaryColor, $style);
+                border-color: transparent transparent transparent nth($primaryColor, $style);
             }
         }
     }

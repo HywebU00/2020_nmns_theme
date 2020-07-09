@@ -1,34 +1,76 @@
 .modal {
     position: fixed;
     display: none;
-    width: 400px;
-    height: 300px;
+    width: 600px;
+    height: 500px;
     background: #FFF;
     z-index: 99999999;
     top: 5%;
     left: 50%;
-    margin-left: -200px;
-    padding: 1em 1em 1em;
+    margin-left: -300px;
+    padding: 2em 1em 3em;
     @include box-sizing;
-    border-radius:8px;
-    box-shadow:1px 1px 15px RGBA(0, 0, 0, .5);
+    border-radius: 8px;
+    box-shadow: 1px 1px 15px RGBA(0, 0, 0, .5);
     animation: scaleUp .5s ease-out;
+    @include screen('mobile') {
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        border-radius: 0;
+    }
     h2 {
-        border-bottom: 1px solid $primaryColor;
+        border-bottom: 2px solid nth($primaryColor, $style) !important;
         padding-bottom: .5em;
+        color: nth($primaryColor, $style) !important;
+    }
+    h3 {
+        text-align: left;
+        color: #333 !important;
+        font-weight: 700;
+        font-size: 1.125em;
+        padding-left: 15px;
+        position: relative;
+        &:before {
+            content: '';
+            border: 8px solid nth($primaryColor, $style);
+            border-color: transparent transparent transparent nth($primaryColor, $style);
+            position: absolute;
+            left: 0;
+            top: 5px;
+        }
+    }
+    .content {
+        overflow-y: auto;
+        height: 80%;
+        text-align: center;
+        padding-bottom: 1em;
+        p {
+            text-align: left;
+            margin: 0 0 20px !important;
+            line-height: 1.6em;
+        }
     }
     .close {
         position: absolute;
         top: 5px;
         right: 5px;
-        width: 30px !important;
+        width: 35px !important;
         min-width: auto;
-        height: 30px;
+        height: 35px;
         font-size: 0em;
         border: none;
         display: block;
         padding: 0;
-        background: url(../images/basic/icon_close.svg) no-repeat center center;
+        background: url(../images/basic/icon_close2.svg) no-repeat center center;
+        background-size: 20px;
+        background-color: #666 !important;
+        border: 1px solid #666 !important;
+        border-radius: 50%;
         &:hover, &:focus {
             cursor: pointer;
         }
@@ -53,4 +95,31 @@
     height: 100%;
     background: RGBA(0, 0, 0, .5);
     z-index: 99999998;
+}
+.activity_data {
+    margin-bottom: 15px;
+    text-align: left;
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            list-style-type: none;
+            display: inline-block;
+            margin: 0 30px 0 0;
+            padding: 0 0 0 20px;
+            font-size: 1.25em;
+            position: relative;
+            span {
+                font-weight: 700;
+            }
+            &:before {
+                content: '';
+                border: 8px solid nth($primaryColor, $style);
+                border-color: transparent transparent transparent nth($primaryColor, $style);
+                position: absolute;
+                top: 3px;
+                left: 5px;
+            }
+        }
+    }
 }
