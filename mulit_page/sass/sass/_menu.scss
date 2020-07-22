@@ -17,9 +17,9 @@
         >li {
             display: inline-block;
             vertical-align: top;
-            min-width: 10em;
+            min-width: 8em;
             @include screen('tablet') {
-                min-width: 8em;
+                min-width:5.7em;
             }
             >a {
                 display: block;
@@ -177,14 +177,14 @@
 .menu_vertical {
     .menu {
         position: fixed;
-        top:10px;
+        top:0px;
         width: 140px;
         margin-left: -160px;
         background-color: #fff;
         border-radius: 0 0 30px 0;
         >ul {
             >li {
-                margin-bottom: 20px;
+                margin-bottom: 15px;
             }
         }
     }
