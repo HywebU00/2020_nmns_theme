@@ -26,6 +26,7 @@ h4 {
     
 }
 .sp {
+    line-height: 2em;
     .content {
         ol {
             margin: 0 0 0 20px;
@@ -45,6 +46,17 @@ h4 {
                         font-weight: normal;
                     }
                 }
+            }
+        }
+        img {
+            float: left;
+            margin: 0px 2em 1.5em 0;
+            max-width: 380px !important;
+            @include screen('mobile') {
+                float: none;
+                width: 100% !important;
+                max-width: 100% !important;
+                margin: 0px auto 1.5em;
             }
         }
     }

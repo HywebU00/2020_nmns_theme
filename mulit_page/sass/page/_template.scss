@@ -95,7 +95,8 @@ body {
     position: relative;
     margin: 0 auto;
     padding: 0;
-
+   
+   
     // 可先設定一個中央區塊最大寬，限制accesskey對齊
     @include screen('mobile') {
         padding-top: 60px;
@@ -150,6 +151,8 @@ body {
     .container {
         padding: 0 100px 150px;
         position: relative;
+        background-color: #fff;
+         min-height: 800px;
         &:before {
             content: '';
             background-image: url('../images/bird_pic.png');

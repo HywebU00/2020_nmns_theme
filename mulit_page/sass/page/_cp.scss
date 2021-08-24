@@ -78,6 +78,15 @@ h1.title, h2.title {
         background: #FFF;
     }
     img {
+        float: left;
+        margin: 0px 2em 1.5em 0;
+        max-width: 380px!important;
+        @include screen('mobile') {
+            float: none;
+            width: 100%!important;
+            max-width: 100%!important;
+            margin: 0px auto 1.5em;
+        }
         &.float_left {
             float: left;
             margin: 0px 1em 1em 0;
@@ -107,7 +116,7 @@ h1.title, h2.title {
     ul, ol {
         line-height: 1.6em;
         margin: 0 0 0 25px;
-        padding:0;
+        padding: 0;
         li {
             margin-bottom: 15px;
             span {
@@ -119,7 +128,6 @@ h1.title, h2.title {
     //     list-style-type: none;
     //     margin: 0;
     // }
-
     p.blockclear {
         float: none;
         clear: both;
@@ -142,19 +150,19 @@ h1.title, h2.title {
         }
     }
     .refund {
-            margin: 0 0 30px;
-            text-align: center;
-            @include screen('tablet') {
-                img {
-                    width: 95%;
-                }
-            }
-            @include screen('mobile') {
-                img {
-                    width: 100%;
-                }
+        margin: 0 0 30px;
+        text-align: center;
+        @include screen('tablet') {
+            img {
+                width: 95%;
             }
         }
+        @include screen('mobile') {
+            img {
+                width: 100%;
+            }
+        }
+    }
 }
 // 文章標籤
 div.tag {
