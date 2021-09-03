@@ -375,6 +375,33 @@ p {
                 }
             }
         }
+        .image {
+            float: left;
+            margin: 0px 2em 1.5em 0;
+            max-width: 380px;
+            overflow: hidden;
+            padding: 0;
+            img {
+                float: none;
+                width: 100%;
+                margin: 0 0 5px;
+                display: block;
+                border-radius: 5px;
+            }
+            span {
+                text-align: center;
+                display: block;
+                color: $color-red;
+            }
+            @include screen('mobile') {
+                float: none;
+                max-width: 100%;
+                width: 100%;
+                margin: 0px auto;
+                display: block;
+                margin-bottom: 2em;
+            }
+        }
         img {
             float: left;
             margin: 0px 2em 1.5em 0;
@@ -434,6 +461,33 @@ p {
                 margin: 0 0 15px;
                 list-style-type: disc;
                 line-height: 1.8em;
+            }
+        }
+        .image {
+            float: left;
+            margin: 0px 2em 1.5em 0;
+            max-width: 380px;
+            overflow: hidden;
+            padding: 0;
+            img {
+                float: none;
+                width: 100%;
+                margin: 0 0 5px;
+                display: block;
+                border-radius: 5px;
+            }
+            span {
+                text-align: center;
+                display: block;
+                color: $color-red;
+            }
+            @include screen('mobile') {
+                float: none;
+                max-width: 100%;
+                width: 100%;
+                margin: 0px auto;
+                display: block;
+                margin-bottom: 2em;
             }
         }
         img {

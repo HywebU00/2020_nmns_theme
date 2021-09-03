@@ -22,20 +22,20 @@ h1.title, h2.title {
     .pic {
         float: left;
         margin: 0px 3em 2em 0;
-        width: 380px;
+        max-width: 380px;
         overflow: hidden;
         padding: 0;
         img {
             float: none;
             width: 100%;
-            margin: 0;
+            margin: 0 0 5px;
             display: block;
             border-radius: 5px;
         }
         span {
             text-align: center;
             display: block;
-            font-size: .938em;
+            color:$color-red;
         }
         @include screen('mobile') {
             float: none;
@@ -49,15 +49,21 @@ h1.title, h2.title {
     .image {
         float: left;
         margin: 0px 3em 2em 0;
-        width: 380px;
+        max-width: 380px;
         overflow: hidden;
         padding: 0;
         img {
             float: none;
             width: 100%;
-            margin: 0;
+            margin: 0 0 5px;
             display: block;
             border-radius: 5px;
+        }
+        span {
+            text-align: center;
+            display: block;
+            color:$color-red;
+            
         }
         @include screen('mobile') {
             float: none;
