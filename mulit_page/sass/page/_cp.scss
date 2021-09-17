@@ -35,7 +35,7 @@ h1.title, h2.title {
         span {
             text-align: center;
             display: block;
-            color:$color-red;
+            color: $color-red;
         }
         @include screen('mobile') {
             float: none;
@@ -62,8 +62,7 @@ h1.title, h2.title {
         span {
             text-align: center;
             display: block;
-            color:$color-red;
-            
+            color: $color-red;
         }
         @include screen('mobile') {
             float: none;
@@ -83,14 +82,40 @@ h1.title, h2.title {
     table {
         background: #FFF;
     }
+    .image_anysize {
+        max-width: 100%;
+        margin: 0px auto 1.5em;
+        overflow: hidden;
+        padding: 0;
+        display: block;
+        img {
+            margin: 0 auto 5px;
+            display: block;
+        }
+        span {
+            text-align: center;
+            display: block;
+            color: $color-red;
+        }
+        @include screen('mobile') {
+            max-width: 100%;
+            width: 100%;
+            margin: 0px auto;
+            display: block;
+            margin-bottom: 2em;
+        }
+    }
     img {
-        float: left;
-        margin: 0px 2em 1.5em 0;
-        max-width: 380px!important;
+        float: none;
+        margin: 0px auto 1.5em;
+        max-width: 100% !important;
+        text-align: center;
+        display: block;
+        border-radius: 5px;
         @include screen('mobile') {
             float: none;
-            width: 100%!important;
-            max-width: 100%!important;
+            width: 100% !important;
+            max-width: 100% !important;
             margin: 0px auto 1.5em;
         }
         &.float_left {
