@@ -57,13 +57,16 @@ body {
         .main {
             .container {
 
-                padding: 0 30px 150px 160px;
+                padding: 0 100px 150px 160px;
+                @include screen('tablet'){
+                    padding: 0 70px 150px 160px;
+                }
                 @include screen('mobile') {
+                    padding: 0 50px 150px;
+                }
+                @include screen('xs_mobile') {
                     padding: 0 30px 150px;
                 }
-                // @include screen('xs_mobile') {
-                //     padding: 0 30px 150px;
-                // }
             }
         }
     }
