@@ -124,6 +124,13 @@ a {
             }
         }
     }
+    .activity_Tb, .memberTb{
+        table{
+            th{
+                 background-color: nth($secondaryColor, $style);
+            }
+        }
+    }
     // _menu.scss
     .menu {
         >ul {
@@ -277,6 +284,13 @@ a {
         table {
             th {
                 background-color: nth($primaryColor, $style);
+            }
+        }
+    }
+    .activity_Tb, .memberTb{
+        table{
+            th{
+                 background-color: nth($secondaryColor, $style);
             }
         }
     }
@@ -436,6 +450,13 @@ a {
             }
         }
     }
+    .activity_Tb, .memberTb{
+        table{
+            th{
+                 background-color: nth($secondaryColor, $style);
+            }
+        }
+    }
     // _menu.scss
     .menu {
         >ul {
@@ -589,6 +610,13 @@ a {
         table {
             th {
                 background-color: nth($primaryColor, $style);
+            }
+        }
+    }
+    .activity_Tb, .memberTb{
+        table{
+            th{
+                 background-color: nth($secondaryColor, $style);
             }
         }
     }

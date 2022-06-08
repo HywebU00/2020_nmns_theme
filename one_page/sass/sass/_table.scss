@@ -4,8 +4,8 @@ table {
     margin: 0 0 30px;
     border-collapse: collapse;
     border: #999 1px solid;
-    @include screen('mobile'){
-        border:none;
+    @include screen('mobile') {
+        border: none;
     }
     @include screen('xs_mobile') {
         width: 100%;
@@ -130,9 +130,9 @@ table {
             // Behave  like a "row"
             border: none !important;
             border: #999 1px solid !important;
-            border-top:none !important;
+            border-top: none !important;
             position: relative;
-            padding:.6em;
+            padding: .6em;
             padding-left: 35% !important;
             white-space: normal;
             text-align: left;
@@ -145,7 +145,7 @@ table {
                 left: 0;
                 bottom: 0;
                 width: 30%;
-                padding:10px;
+                padding: 10px;
                 background-color: nth($secondaryColor, $style);
                 white-space: nowrap;
                 text-align: left;
@@ -458,32 +458,53 @@ table {
     table {
         th {
             background-color: nth($primaryColor, $style);
-            width: 100px!important;
+            width: 100px !important;
         }
     }
 }
 //燈箱內的table
 .lightboxTb, .memberTb {
     table {
-        border:1px solid #c9c9c9;
-        tbody{
-            border:none!important;
+        border: 1px solid #c9c9c9;
+        tbody {
+            border: none !important;
         }
         th {
             text-align: right;
             border-bottom: 1px solid #fff;
             width: 130px;
         }
-        @include screen('mobile'){
-            td,th{
-               
-               
-            }
-            th{
-               width: 30%;
-                padding:.5em !important;
+        @include screen('mobile') {
+            td, th {}
+            th {
+                width: 30%;
+                padding: .5em !important;
                 vertical-align: top;
             }
+        }
+    }
+}
+// 活動
+.activity_Tb, .memberTb {
+    background-color: #eee;
+    padding: 0;
+    margin: 0 0 30px;
+    border-radius: 5px;
+    @include box-sizing;
+    table {
+        margin: 0;
+        th {
+            background-color: nth($secondaryColor, $style);
+            color: #fff;
+            position: relative;
+            border: #999 1px solid;
+            text-align: left;
+            vertical-align: top;
+            width: 20%;
+        }
+        td {
+            border: #999 1px solid;
+            background-color: #fff;
         }
     }
 }
