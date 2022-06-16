@@ -215,7 +215,7 @@ a {
                     background-color: nth($primaryColor, $style);
                 }
                 &:hover {
-                    color: nth($lightColor, $style);
+                    color: nth($primaryColor, $style);
                 }
                 @include screen('mobile') {
                     &:hover {
